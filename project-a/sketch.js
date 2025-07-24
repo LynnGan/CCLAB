@@ -5,15 +5,15 @@ Project A: Generative Creatures
 CCLaboratories Biodiversity Atlas 
 */
 
-let progress = 0;
-let seeNext = false;
-let glowActive = false;
+let progress = 0; //control for circle
+let seeNext = false; //next scene trigger
+let glowActive = false; //glow conformation
 
 let glowPositions = [];
 // textFont("Comic Sans MS");
 let glowMessages = ["I’ll take you to the park tomorrow!", "Don’t worry about me…", "Thank you for being with me.", "I’ll show up when you need me.", "I was always waiting for you to speak first.", "I really wanted you to stay that day.", "Let's go out for dinner next week~"];
 let clickedGlow = -1;
-let glowClicked = Array(7).fill(false); // 7 glows, all initially unclicked
+let glowClicked = Array(7).fill(false); // tracking 7 glows, all initially unclicked
 
 function setup() {
     let canvas = createCanvas(800, 500);
@@ -33,6 +33,8 @@ function draw() {
     stroke(139, 216, 252, 80);
     noFill();
 
+
+    //draw circles
     if (progress < 360) {
         progress += 1;
     }
@@ -47,13 +49,14 @@ function draw() {
     if (progress > 240) {
         arc(width / 2, height / 2, 100, 100, 0, (progress - 120) * 1.5);
     }
-
+    //draw star, used refrences 
     if (progress >= 360) {
         drawStar(width / 2, height / 2, 50, 120, 5);
     }
 
     blendMode(BLEND);
 
+    //click and reveal modori
     if (seeNext) {
         fill(255, 200, 0);
         noStroke();
@@ -69,11 +72,11 @@ function draw() {
         text("✨This is Modori✨", 0, 100);
         pop();
     }
-
+    //activate glow particle
     if (seeNext && glowActive) {
         drawSimpleGlows();
     }
-
+    //glow clicked display message (used chat as guide and refrence)
     if (clickedGlow !== -1) {
         fill(255);
         textAlign(CENTER, CENTER);
@@ -88,6 +91,7 @@ function draw() {
 function mouseClicked() {
     if (progress >= 360 && !seeNext) {
         seeNext = true;
+        //activated glow (used youtube and other people's work as refrence)
     } else if (seeNext) {
         let bottleX = width / 2;
         let bottleY = height / 2 + 20;
@@ -95,7 +99,7 @@ function mouseClicked() {
         if (d < 20) {
             glowActive = true;
         }
-
+        //chat as guide
         if (glowActive) {
             for (let i = 0; i < glowPositions.length; i++) {
                 let g = glowPositions[i];
@@ -110,7 +114,7 @@ function mouseClicked() {
         }
     }
 }
-
+//used star refrence p5js
 function drawStar(x, y, radius1, radius2, npoints) {
     beginShape();
     let angle = 360 / npoints;
@@ -126,43 +130,50 @@ function drawStar(x, y, radius1, radius2, npoints) {
     endShape(CLOSE);
 }
 
-function drawModori() {
+function drawModori() {  //draws modori
+    //body
     fill(150, 220, 240, 200);
-    ellipse(0, 0, 100, 120);
+    ellipse(0, 0, 130, 150);
 
-    fill(130, 200, 220, 200);
+    //feet
+    fill(70, 150, 200, 200);
     ellipse(-20, 50, 20, 10);
     ellipse(20, 50, 20, 10);
 
+    // Arms 
     ellipse(-35, 10, 15, 30);
     ellipse(35, 10, 15, 30);
 
+    //eyes
     fill(50);
     ellipse(-15, -10, 8, 8);
     ellipse(15, -10, 8, 8);
+
+    //mouth
     noFill();
     stroke(50);
     strokeWeight(2);
     arc(0, 0, 30, 20, 20, 160);
     noStroke();
 
+    //glowing bottle, refrence used
     if (glowActive) {
         let glowAlpha = 150 + 50 * sin(frameCount * 2);
         fill(255, 230, 150, glowAlpha);
         ellipse(0, 20, 30, 40);
     }
-
+    //bottle
     fill(255, 240, 200);
     rectMode(CENTER);
     rect(0, 20, 20, 30, 5);
 }
 
-function drawSimpleGlows() {
+function drawSimpleGlows() { //draws glow
     noStroke();
     fill(255, 240, 150, 150 + 50 * sin(frameCount * 2));
 
     glowPositions = [];
-
+    //ai suggested this format for glow
     let positions = [
         [width / 2 + 120 * sin(frameCount * 0.02), height / 2 + 140 * cos(frameCount * 0.01)],
         [width / 2 + 120 * sin(frameCount * 0.015), height / 2 + 160 * sin(frameCount * 0.018)],

@@ -143,8 +143,8 @@ class cat {
   drawLimbs(x, y) {
     stroke(200, 150, 100);
     strokeWeight(8);
-    line(x - 20, y + 60, x - 20, y + 80);
-    line(x + 20, y + 60, x + 20, y + 80);
+    line(x - 10, y + 40, x - 20, y + 80);
+    line(x + 10, y + 40, x + 20, y + 80);
   }
 }
 

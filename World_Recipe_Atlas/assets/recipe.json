@@ -1,0 +1,36 @@
+[
+    {
+        "name": "红烧肉",
+        "local_name": "Red Braised Pork Belly",
+        "country": "Jiangnan, China",
+        "coordinates": {
+            "lat": 31.2304,
+            "long": 121.4737
+        },
+        "origin_story": "In old Shanghai alleyways, red braised pork wasn't just food—it was a sign of celebration. Unlike the spicier Hunan version, the Shanghai style is rich, glossy, and slightly sweet, made with caramelized sugar and slow-braised pork belly. Back then, it was a rare treat, usually served only during the New Year or special gatherings. Children would crowd around the stove, drawn by the scent, waiting eagerly for the first tender, glistening bite. To many Shanghainese, this dish isn't just delicious—it's the flavor of home and warmth.",
+        "ingredients": [
+            "500g pork belly",
+            "3 tbsp soy sauce",
+            "2 tbsp sugar",
+            "Shaoxing wine",
+            "Star anise",
+            "Ginger"
+        ],
+        "steps": [
+            "Cut pork belly into chunks.",
+            "Caramelize sugar and sear the pork.",
+            "Add soy sauce, wine, and spices.",
+            "Simmer for 1 hour or until tender."
+        ],
+        "image": "",
+        "category": "Main",
+        "hidden": false,
+        "click_count": 8,
+        "messages": [
+            "The creator thinks the Mao-style tastes like disappointment.",
+            "Sorry Chairman, Shanghai wins this round.",
+            "Oh, you clicked 8 times!",
+            "The creator firmly stands with sugar, soy sauce, and elegance."
+        ]
+    }
+]

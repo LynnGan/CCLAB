@@ -1,36 +1,1640 @@
 [
     {
+        "name": "Pancake",
+        "local_name": "American Pancake",
+        "country": "United States",
+        "city": "New York",
+        "coordinates": {
+            "lat": 40.7128,
+            "long": -74.006
+        },
+        "origin_story": "American pancakes became a breakfast staple in the early 20th century, reflecting the rise of diner culture and a growing taste for hearty, sweet morning meals.",
+        "ingredients": [
+            "1 cup all-purpose flour",
+            "2 tbsp sugar",
+            "1 tsp baking powder",
+            "1/2 tsp baking soda",
+            "1 cup buttermilk",
+            "1 egg",
+            "2 tbsp melted butter",
+            "Pinch of salt"
+        ],
+        "steps": [
+            "Step 1: In a bowl, mix flour, sugar, baking powder, baking soda, and salt.",
+            "Step 2: In another bowl, whisk together buttermilk, egg, and melted butter.",
+            "Step 3: Combine wet and dry ingredients until just mixed.",
+            "Step 4: Heat a lightly greased pan over medium heat and pour batter.",
+            "Step 5: Flip when bubbles form and cook until golden.",
+            "Step 6: Serve with syrup, butter, or fruit."
+        ],
+        "image": "images/pancake.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Arepas",
+        "local_name": "Arepas",
+        "country": "Venezuela",
+        "city": "Caracas",
+        "coordinates": {
+            "lat": 10.4806,
+            "long": -66.9036
+        },
+        "origin_story": "Arepas are an ancient food dating back to pre-Columbian times, now a daily essential in Venezuelan cuisine, filled with cheese, meats, or beans.",
+        "ingredients": [
+            "2 cups pre-cooked cornmeal (masarepa)",
+            "2 1/2 cups warm water",
+            "1 tsp salt",
+            "1 tbsp oil"
+        ],
+        "steps": [
+            "Step 1: Mix warm water and salt, then gradually add cornmeal.",
+            "Step 2: Let the dough rest for 5 minutes.",
+            "Step 3: Shape into disks and flatten slightly.",
+            "Step 4: Grill or pan-fry each side until golden.",
+            "Step 5: Optionally bake at 180°C (350°F) for 10 minutes.",
+            "Step 6: Slice open and fill with desired ingredients."
+        ],
+        "image": "images/arepas.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Bangers and Mash",
+        "local_name": "Bangers and Mash",
+        "country": "United Kingdom",
+        "city": "London",
+        "coordinates": {
+            "lat": 51.5074,
+            "long": -0.1278
+        },
+        "origin_story": "A British comfort food classic dating back to WWI, when sausages would sometimes 'bang' while cooking due to water content. The mash is a beloved complement.",
+        "ingredients": [
+            "4 pork sausages",
+            "4 large potatoes",
+            "1/4 cup milk",
+            "2 tbsp butter",
+            "1 large onion",
+            "1 tbsp flour",
+            "1 cup beef stock"
+        ],
+        "steps": [
+            "Step 1: Boil and mash the potatoes with milk and butter.",
+            "Step 2: Grill or pan-fry sausages until browned and cooked through.",
+            "Step 3: In a pan, caramelize onions, add flour and stir.",
+            "Step 4: Pour in beef stock to make onion gravy.",
+            "Step 5: Serve sausages over mashed potatoes, topped with gravy."
+        ],
+        "image": "images/bangers_mash.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Bánh mì",
+        "local_name": "Banh Mi Sandwich",
+        "country": "Vietnam",
+        "city": "Ho Chi Minh City",
+        "coordinates": {
+            "lat": 10.762622,
+            "long": 106.660172
+        },
+        "origin_story": "Bánh mì emerged during French colonial rule, blending baguettes with Vietnamese fillings. It’s now a global street food icon.",
+        "ingredients": [
+            "1 Vietnamese baguette",
+            "Grilled pork or pâté",
+            "Pickled carrots and daikon",
+            "Cucumber slices",
+            "Fresh cilantro",
+            "Mayonnaise",
+            "Chili sauce"
+        ],
+        "steps": [
+            "Step 1: Lightly toast the baguette.",
+            "Step 2: Spread mayonnaise and chili sauce inside.",
+            "Step 3: Layer in pork or pâté, pickled veggies, cucumber, and cilantro.",
+            "Step 4: Close sandwich and serve immediately."
+        ],
+        "image": "images/banh_mi.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Phở Bò",
+        "local_name": "Beef Pho",
+        "country": "Vietnam",
+        "city": "Hanoi",
+        "coordinates": {
+            "lat": 21.0285,
+            "long": 105.8542
+        },
+        "origin_story": "Pho originated in early 20th-century Hanoi, influenced by French and Chinese cuisines, and has become Vietnam's national dish.",
+        "ingredients": [
+            "1 kg beef bones",
+            "300g beef brisket or flank",
+            "Rice noodles",
+            "1 onion and ginger (charred)",
+            "Cinnamon, star anise, cloves",
+            "Fish sauce",
+            "Bean sprouts, lime, chili, herbs"
+        ],
+        "steps": [
+            "Step 1: Simmer beef bones for several hours to make broth.",
+            "Step 2: Skim and add charred onion, ginger, and spices.",
+            "Step 3: Add fish sauce and simmer until fragrant.",
+            "Step 4: Cook rice noodles and slice cooked beef.",
+            "Step 5: Assemble in a bowl: noodles, beef, hot broth.",
+            "Step 6: Serve with herbs, bean sprouts, and lime on the side."
+        ],
+        "image": "images/pho_bo.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "비빔밥",
+        "local_name": "Bibimbap",
+        "country": "South Korea",
+        "city": "Seoul",
+        "coordinates": {
+            "lat": 37.5665,
+            "long": 126.978
+        },
+        "origin_story": "Bibimbap, meaning 'mixed rice,' was traditionally eaten on the eve of the Lunar New Year to use up leftover side dishes before starting fresh. Today, it’s a colorful symbol of Korean harmony—each topping representing balance and wellness.",
+        "ingredients": [
+            "2 cups steamed white rice",
+            "1/2 cup bean sprouts",
+            "1/2 cup julienned carrots",
+            "1/2 cup spinach",
+            "1/2 cup shiitake mushrooms",
+            "1/2 zucchini, sliced",
+            "1 fried egg",
+            "2 tbsp gochujang (Korean chili paste)",
+            "1 tbsp sesame oil",
+            "Salt and garlic to taste"
+        ],
+        "steps": [
+            "Step 1: Blanch spinach and bean sprouts separately, season lightly with salt, garlic, and sesame oil.",
+            "Step 2: Sauté carrots, mushrooms, and zucchini until tender.",
+            "Step 3: Place steamed rice in a bowl and neatly arrange the vegetables on top.",
+            "Step 4: Fry an egg and place it at the center.",
+            "Step 5: Add a spoonful of gochujang and a drizzle of sesame oil.",
+            "Step 6: Mix well before eating."
+        ],
+        "image": "images/bibimbap.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Борщ",
+        "local_name": "Borscht",
+        "country": "Ukraine",
+        "city": "Kyiv",
+        "coordinates": {
+            "lat": 50.4501,
+            "long": 30.5234
+        },
+        "origin_story": "With its vibrant crimson color from beets, Borscht is more than soup—it's the soul of Ukrainian kitchens. Shared during weddings, holidays, and cold winters, every family has their own version, passed from grandmother to granddaughter.",
+        "ingredients": [
+            "2 medium beets, grated",
+            "1 large potato, cubed",
+            "1 carrot, grated",
+            "1 onion, chopped",
+            "1/4 head cabbage, shredded",
+            "2 tbsp tomato paste",
+            "4 cups beef or vegetable broth",
+            "2 tbsp vinegar",
+            "1 tbsp sugar",
+            "Sour cream and dill for garnish",
+            "Salt and pepper to taste"
+        ],
+        "steps": [
+            "Step 1: In a large pot, sauté onions, carrots, and beets until soft.",
+            "Step 2: Stir in tomato paste, vinegar, and sugar. Cook for 2-3 minutes.",
+            "Step 3: Add broth, potatoes, and cabbage. Simmer for 30–40 minutes until vegetables are tender.",
+            "Step 4: Season with salt and pepper.",
+            "Step 5: Serve hot with a dollop of sour cream and sprinkle of fresh dill."
+        ],
+        "image": "images/borscht.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Churrasco",
+        "local_name": "Brazilian BBQ",
+        "country": "Brazil",
+        "city": "São Paulo",
+        "coordinates": {
+            "lat": -23.5505,
+            "long": -46.6333
+        },
+        "origin_story": "Churrasco began on the grassy plains of southern Brazil where gauchos slow-roasted skewered meats over open flames. It’s now a national ritual—smoky, festive, and full of laughter, shared among friends and family in lively gatherings.",
+        "ingredients": [
+            "1 kg beef picanha (top sirloin cap), cut into thick slices",
+            "Coarse sea salt",
+            "Metal or wooden skewers",
+            "Optional sides: farofa, chimichurri, grilled pineapple"
+        ],
+        "steps": [
+            "Step 1: Cut picanha into thick slices, folding each into a 'C' shape on skewers.",
+            "Step 2: Generously sprinkle with coarse salt on all sides.",
+            "Step 3: Grill over charcoal or open flame, rotating frequently.",
+            "Step 4: Cook to desired doneness, usually medium-rare.",
+            "Step 5: Slice directly off the skewer and serve hot with side dishes."
+        ],
+        "image": "images/churrasco.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "चिकन मखनी",
+        "local_name": "Butter Chicken",
+        "country": "India",
+        "city": "Delhi",
+        "coordinates": {
+            "lat": 28.6139,
+            "long": 77.209
+        },
+        "origin_story": "Butter Chicken was born by accident in a Delhi kitchen in the 1950s, where leftover tandoori chicken was simmered in a rich tomato-butter-cream sauce to keep it moist. It quickly became a symbol of North Indian cuisine and a global favorite.",
+        "ingredients": [
+            "500g boneless chicken (tandoori or grilled)",
+            "3 tbsp butter",
+            "1 cup tomato puree",
+            "1/2 cup heavy cream",
+            "1 onion, finely chopped",
+            "1 tsp garam masala",
+            "1 tsp chili powder",
+            "1 tbsp ginger-garlic paste",
+            "Salt to taste",
+            "Fresh cilantro for garnish"
+        ],
+        "steps": [
+            "Step 1: Heat butter in a pan and sauté onions until golden.",
+            "Step 2: Add ginger-garlic paste, tomato puree, and spices. Cook until the oil separates.",
+            "Step 3: Stir in cream and simmer for 5 minutes.",
+            "Step 4: Add pre-cooked chicken pieces and simmer for 10 more minutes.",
+            "Step 5: Garnish with cilantro and serve hot with naan or rice."
+        ],
+        "image": "images/butter_chicken.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Ceviche",
+        "local_name": "Ceviche",
+        "country": "Peru",
+        "city": "Trujillo",
+        "coordinates": {
+            "lat": -8.1091,
+            "long": -79.0215
+        },
+        "origin_story": "Ceviche is said to date back over 2,000 years to the Moche civilization on Peru’s northern coast. Originally marinated in fermented chicha, today’s version uses citrus to 'cook' the fish, offering a refreshing glimpse into coastal heritage.",
+        "ingredients": [
+            "300g fresh white fish (e.g., sea bass), cubed",
+            "1 red onion, thinly sliced",
+            "Juice of 5 limes",
+            "1 chili pepper, sliced (e.g., aji amarillo)",
+            "Fresh cilantro, chopped",
+            "Salt to taste",
+            "Sweet potato and corn (optional sides)"
+        ],
+        "steps": [
+            "Step 1: Place cubed fish in a glass bowl with lime juice. Let sit for 15–20 minutes until opaque.",
+            "Step 2: Add sliced onion, chili, cilantro, and salt. Mix gently.",
+            "Step 3: Serve immediately with sweet potato and corn on the side."
+        ],
+        "image": "images/ceviche.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Boston Baked Lobster",
+        "local_name": "Cheese Baked Lobster",
+        "country": "United States",
+        "city": "Boston",
+        "coordinates": {
+            "lat": 42.3601,
+            "long": -71.0589
+        },
+        "origin_story": "Boston’s love for lobster began with its early colonial fishing roots. This baked version, covered in cheese and butter, is a luxurious twist on New England’s seafaring traditions, often served at coastal diners and holiday tables.",
+        "ingredients": [
+            "2 whole lobsters, halved",
+            "1/2 cup shredded mozzarella cheese",
+            "2 tbsp butter, melted",
+            "2 cloves garlic, minced",
+            "Salt and pepper to taste",
+            "Lemon wedges (for serving)",
+            "Chopped parsley (for garnish)"
+        ],
+        "steps": [
+            "Step 1: Preheat oven to 200°C (400°F).",
+            "Step 2: Place halved lobsters on a baking tray, meat side up.",
+            "Step 3: Brush with melted butter mixed with garlic, salt, and pepper.",
+            "Step 4: Top with shredded cheese and bake for 10–12 minutes until golden.",
+            "Step 5: Garnish with parsley and serve with lemon wedges."
+        ],
+        "image": "images/boston_baked_lobster.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Adobo",
+        "local_name": "Chicken Adobo",
+        "country": "Philippines",
+        "city": "Manila",
+        "coordinates": {
+            "lat": 14.5995,
+            "long": 120.9842
+        },
+        "origin_story": "Adobo is the unofficial national dish of the Philippines, evolving from native cooking methods preserved in vinegar and later infused with Spanish influence. Its balance of salty, sour, and savory makes it a beloved comfort food across generations.",
+        "ingredients": [
+            "1 kg chicken thighs or drumsticks",
+            "1/2 cup soy sauce",
+            "1/3 cup vinegar",
+            "4 garlic cloves, crushed",
+            "1 bay leaf",
+            "1 tsp black peppercorns",
+            "1 tbsp brown sugar (optional)",
+            "1 cup water"
+        ],
+        "steps": [
+            "Step 1: In a pot, combine soy sauce, vinegar, garlic, peppercorns, bay leaf, and chicken. Let marinate for 30 minutes.",
+            "Step 2: Bring to a boil, then reduce heat and simmer covered for 25 minutes.",
+            "Step 3: Remove lid and simmer until sauce thickens.",
+            "Step 4: Add sugar if using. Serve hot with steamed rice."
+        ],
+        "image": "images/adobo.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Chili con Carne",
+        "local_name": "Chili con Carne",
+        "country": "United States",
+        "city": "San Antonio",
+        "coordinates": {
+            "lat": 29.4241,
+            "long": -98.4936
+        },
+        "origin_story": "Born on the dusty trails of Texas and sold by 'Chili Queens' in the plazas of San Antonio, Chili con Carne was more than a dish—it was a spectacle of fire, spice, and community. From cowboy camps to modern kitchens, this Tex-Mex classic carries the bold spirit of the frontier.",
+        "ingredients": [
+            "500g ground beef",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 can diced tomatoes",
+            "1 can kidney beans, drained",
+            "2 tbsp chili powder",
+            "1 tsp cumin",
+            "1 tsp paprika",
+            "Salt and pepper to taste",
+            "Olive oil"
+        ],
+        "steps": [
+            "Step 1: Heat oil in a pot and sauté onions and garlic until soft.",
+            "Step 2: Add ground beef and cook until browned.",
+            "Step 3: Stir in chili powder, cumin, paprika, salt, and pepper.",
+            "Step 4: Add tomatoes and beans. Simmer uncovered for 30 minutes.",
+            "Step 5: Serve hot with cornbread, rice, or tortillas."
+        ],
+        "image": "images/chili_con_carne.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "砂锅焗饭",
+        "local_name": "Claypot Rice",
+        "country": "China",
+        "city": "Guangzhou",
+        "coordinates": {
+            "lat": 23.1291,
+            "long": 113.2644
+        },
+        "origin_story": "Hidden in the smoky corners of Guangzhou’s night markets, claypot rice is a humble yet masterful creation. Its magic lies in timing: a perfectly crisp rice crust at the bottom and fragrant steam rising from soy-glazed meats on top—a street food tradition passed through generations.",
+        "ingredients": [
+            "1 cup jasmine rice",
+            "150g Chinese sausage (lap cheong), sliced",
+            "100g boneless chicken, marinated",
+            "1 tbsp soy sauce",
+            "1 tsp dark soy sauce",
+            "1 tsp oyster sauce",
+            "1 stalk green onion, chopped",
+            "1 cup water"
+        ],
+        "steps": [
+            "Step 1: Rinse rice and place in claypot with water. Cook on medium heat until water is nearly absorbed.",
+            "Step 2: Add marinated chicken and sausage on top. Cover and reduce heat to low.",
+            "Step 3: Cook for 10–15 minutes until the bottom forms a crispy crust.",
+            "Step 4: Drizzle with soy sauces and oyster sauce.",
+            "Step 5: Garnish with green onions and serve hot."
+        ],
+        "image": "images/claypot_rice.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Profiteroles",
+        "local_name": "Cream Puffs",
+        "country": "France",
+        "city": "Paris",
+        "coordinates": {
+            "lat": 48.8566,
+            "long": 2.3522
+        },
+        "origin_story": "Profiteroles trace their roots to the opulent courts of Renaissance France. Delicate yet indulgent, these airy puffs of choux pastry—filled with whipped cream and draped in chocolate—once graced royal banquets and now charm dessert lovers across the world.",
+        "ingredients": [
+            "1/2 cup butter",
+            "1 cup water",
+            "1 cup flour",
+            "4 eggs",
+            "1 cup heavy cream",
+            "2 tbsp sugar",
+            "1 tsp vanilla extract",
+            "100g dark chocolate, melted (for topping)"
+        ],
+        "steps": [
+            "Step 1: In a saucepan, bring water and butter to a boil. Add flour and stir until dough forms.",
+            "Step 2: Remove from heat. Beat in eggs one at a time until smooth.",
+            "Step 3: Pipe small mounds onto a baking sheet and bake at 200°C (400°F) for 20–25 minutes.",
+            "Step 4: Whip cream with sugar and vanilla until stiff peaks form.",
+            "Step 5: Slice puffs and fill with cream. Drizzle melted chocolate on top before serving."
+        ],
+        "image": "images/profiteroles.jpg",
+        "category": "Dessert",
+        "hidden": false
+    },
+    {
+        "name": "Croissant",
+        "local_name": "Croissant",
+        "country": "Austria",
+        "city": "Vienna",
+        "coordinates": {
+            "lat": 48.2082,
+            "long": 16.3738
+        },
+        "origin_story": "While the croissant is now an icon of French patisserie, its roots trace back to Vienna. Legend tells that bakers created the crescent-shaped pastry to celebrate the defeat of the Ottoman Empire, mimicking the Islamic crescent symbol. The flaky, buttery layers made their way to France and were perfected into the pastry we know today.",
+        "ingredients": [
+            "250g all-purpose flour",
+            "125ml warm milk",
+            "25g sugar",
+            "1 tsp salt",
+            "7g instant yeast",
+            "150g cold butter (for lamination)",
+            "1 egg (for egg wash)"
+        ],
+        "steps": [
+            "Step 1: Mix flour, sugar, salt, and yeast. Add warm milk to form a dough. Chill for 30 minutes.",
+            "Step 2: Roll out dough, add cold butter slab, and fold. Repeat lamination 3 times, chilling between folds.",
+            "Step 3: Roll and cut dough into triangles. Roll each triangle into a crescent shape.",
+            "Step 4: Let rise for 1 hour, then brush with egg wash.",
+            "Step 5: Bake at 200°C (390°F) for 15–20 minutes until golden brown."
+        ],
+        "image": "images/croissant.jpg",
+        "category": "Snack",
+        "hidden": false
+    },
+    {
+        "name": "担担面",
+        "local_name": "Dan Dan Noodles",
+        "country": "China",
+        "city": "Chengdu",
+        "coordinates": {
+            "lat": 30.5728,
+            "long": 104.0668
+        },
+        "origin_story": "Dan Dan Noodles originated in Chengdu during the Qing Dynasty, sold by street vendors carrying a pole—called a 'dan dan'—with baskets on each end. The bold flavors of chili oil, Sichuan peppercorns, and preserved vegetables created a cult favorite that remains a staple of Sichuan street food.",
+        "ingredients": [
+            "200g wheat noodles",
+            "100g minced pork",
+            "2 tbsp chili oil",
+            "1 tbsp Sichuan peppercorn oil",
+            "1 tbsp soy sauce",
+            "1 tbsp black vinegar",
+            "1 tbsp preserved mustard greens",
+            "2 cloves garlic, minced",
+            "1 tsp sugar",
+            "Chopped scallions and crushed peanuts for garnish"
+        ],
+        "steps": [
+            "Step 1: Cook noodles until al dente and set aside.",
+            "Step 2: Sauté garlic and pork in oil until browned. Add soy sauce and preserved vegetables.",
+            "Step 3: In a bowl, mix chili oil, peppercorn oil, vinegar, sugar, and some noodle water.",
+            "Step 4: Place noodles in bowl, top with pork mixture, scallions, and peanuts.",
+            "Step 5: Stir thoroughly and serve hot."
+        ],
+        "image": "images/dan_dan_noodles.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "饺子",
+        "local_name": "Dumplings",
+        "country": "China",
+        "city": "Beijing",
+        "coordinates": {
+            "lat": 39.9042,
+            "long": 116.4074
+        },
+        "origin_story": "Chinese dumplings have been a symbol of family and prosperity since the Han dynasty. Traditionally made during the Lunar New Year, their crescent shape resembles ancient Chinese ingots. Their fillings vary by region, but their role in reunions and comfort remains universal.",
+        "ingredients": [
+            "300g minced pork",
+            "1 cup napa cabbage, chopped",
+            "2 scallions, minced",
+            "1 tbsp soy sauce",
+            "1 tsp sesame oil",
+            "1 tsp grated ginger",
+            "Dumpling wrappers",
+            "Salt and pepper to taste"
+        ],
+        "steps": [
+            "Step 1: Mix pork, cabbage, scallions, soy sauce, sesame oil, ginger, salt, and pepper.",
+            "Step 2: Place 1 tsp filling in each wrapper. Fold and seal with water.",
+            "Step 3: Boil, steam, or pan-fry until cooked through and golden.",
+            "Step 4: Serve with dipping sauce (soy sauce, vinegar, chili oil)."
+        ],
+        "image": "images/dumplings.jpg",
+        "category": "Snack",
+        "hidden": false
+    },
+    {
+        "name": "Pastel de Nata",
+        "local_name": "Egg Tart",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "coordinates": {
+            "lat": 38.7169,
+            "long": -9.1399
+        },
+        "origin_story": "These custard tarts were first created by monks in the Jerónimos Monastery of Lisbon. Using leftover egg yolks after starching their robes, monks baked the filling in puff pastry cups. When the monastery closed in the 19th century, the secret recipe was passed to a local bakery—now world-famous.",
+        "ingredients": [
+            "1 sheet puff pastry",
+            "4 egg yolks",
+            "1/2 cup sugar",
+            "2 tbsp flour",
+            "1 cup milk",
+            "1 tsp vanilla extract",
+            "Cinnamon for topping"
+        ],
+        "steps": [
+            "Step 1: Line muffin tin with circles of puff pastry.",
+            "Step 2: In a saucepan, mix flour and milk, stir until thickened. Add sugar and vanilla.",
+            "Step 3: Remove from heat and slowly whisk in yolks.",
+            "Step 4: Pour custard into pastry and bake at 220°C (430°F) for 15–20 minutes until blistered.",
+            "Step 5: Sprinkle with cinnamon and serve warm."
+        ],
+        "image": "images/pastel_de_nata.jpg",
+        "category": "Dessert",
+        "hidden": false
+    },
+    {
+        "name": "Empanadas",
+        "local_name": "Empanadas",
+        "country": "Argentina",
+        "city": "Buenos Aires",
+        "coordinates": {
+            "lat": -34.6037,
+            "long": -58.3816
+        },
+        "origin_story": "Brought by Spanish colonists and reinvented across Argentina, empanadas became the beloved handheld meal of the working class and the star of family gatherings. Whether filled with beef, corn, or cheese, each province boasts its own proud variation.",
+        "ingredients": [
+            "500g ground beef",
+            "1 onion, diced",
+            "1 hard-boiled egg, chopped",
+            "10-12 empanada dough discs",
+            "1 tsp paprika",
+            "1 tsp cumin",
+            "Salt and pepper to taste",
+            "Olive oil"
+        ],
+        "steps": [
+            "Step 1: Sauté onions, then add beef and cook until browned.",
+            "Step 2: Season with paprika, cumin, salt, and pepper. Stir in chopped egg.",
+            "Step 3: Fill dough discs, fold, and crimp the edges to seal.",
+            "Step 4: Bake at 200°C (390°F) for 20 minutes or until golden.",
+            "Step 5: Serve warm as a snack or light meal."
+        ],
+        "image": "images/empanadas.jpg",
+        "category": "Snack",
+        "hidden": false
+    },
+    {
+        "name": "فلافل",
+        "local_name": "Falafel",
+        "country": "Lebanon",
+        "city": "Beirut",
+        "coordinates": {
+            "lat": 33.8938,
+            "long": 35.5018
+        },
+        "origin_story": "Falafel’s origins are ancient, possibly dating back to Egypt’s Coptic Christians who sought a meatless meal during Lent. But it’s in the streets of Beirut that falafel evolved into a national icon—crispy golden orbs made of chickpeas and herbs, tucked into warm pita and bursting with bold Middle Eastern flavor.",
+        "ingredients": [
+            "1 cup dried chickpeas (soaked overnight)",
+            "1 small onion, chopped",
+            "3 cloves garlic",
+            "1/4 cup fresh parsley",
+            "1/4 cup fresh cilantro",
+            "1 tsp ground cumin",
+            "1 tsp ground coriander",
+            "Salt and pepper to taste",
+            "Oil for frying"
+        ],
+        "steps": [
+            "Step 1: Blend soaked chickpeas with onion, garlic, herbs, and spices until coarse.",
+            "Step 2: Form mixture into small balls or patties.",
+            "Step 3: Deep-fry in hot oil until golden brown and crispy.",
+            "Step 4: Serve in pita with tahini, tomatoes, and pickles."
+        ],
+        "image": "images/falafel.jpg",
+        "category": "Snack",
+        "hidden": false
+    },
+    {
+        "name": "Feijoada",
+        "local_name": "Feijoada",
+        "country": "Brazil",
+        "city": "Rio de Janeiro",
+        "coordinates": {
+            "lat": -22.9068,
+            "long": -43.1729
+        },
+        "origin_story": "Feijoada is Brazil’s national stew, a rich mix of black beans and pork slow-cooked to perfection. Though often associated with Portuguese roots, it blossomed into a soulful dish in Rio de Janeiro’s favelas and farms—a celebration meal once cooked on Saturdays, now embraced across all walks of life.",
+        "ingredients": [
+            "500g black beans",
+            "300g pork shoulder, cubed",
+            "200g sausage, sliced",
+            "100g bacon, diced",
+            "1 onion, chopped",
+            "4 cloves garlic, minced",
+            "Bay leaves",
+            "Salt and pepper to taste",
+            "Orange slices (for serving)"
+        ],
+        "steps": [
+            "Step 1: Soak black beans overnight. Drain and set aside.",
+            "Step 2: In a large pot, cook bacon until crisp. Add pork and sausage, and brown.",
+            "Step 3: Add onion, garlic, bay leaves, and soaked beans. Cover with water.",
+            "Step 4: Simmer for 2–3 hours until meat and beans are tender.",
+            "Step 5: Serve hot with rice, farofa, and orange slices."
+        ],
+        "image": "images/feijoada.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Boeuf Bourguignon",
+        "local_name": "French Red Wine Beef Stew",
+        "country": "France",
+        "city": "Dijon",
+        "coordinates": {
+            "lat": 47.322,
+            "long": 5.0415
+        },
+        "origin_story": "Boeuf Bourguignon hails from the Burgundy region of France, where local red wine and rustic techniques turned humble cuts of beef into something elegant. Once peasant fare, it became a symbol of refined French cuisine, thanks to slow cooking, rich sauce, and Julia Child's iconic touch.",
+        "ingredients": [
+            "800g beef chuck, cubed",
+            "200g pearl onions",
+            "200g mushrooms, halved",
+            "150g bacon, chopped",
+            "2 carrots, sliced",
+            "2 cups red wine (Burgundy preferred)",
+            "2 cups beef stock",
+            "2 tbsp tomato paste",
+            "Thyme, bay leaf, salt, pepper"
+        ],
+        "steps": [
+            "Step 1: Brown beef cubes in batches and set aside.",
+            "Step 2: In the same pot, cook bacon, then add onions, carrots, and mushrooms.",
+            "Step 3: Return beef to pot, add wine, stock, tomato paste, and herbs.",
+            "Step 4: Cover and simmer for 2-3 hours until beef is fork-tender.",
+            "Step 5: Serve with mashed potatoes or crusty bread."
+        ],
+        "image": "images/boeuf_bourguignon.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "پلو",
+        "local_name": "Lamb Pilaf",
+        "country": "Iran",
+        "city": "Tehran",
+        "coordinates": {
+            "lat": 35.6892,
+            "long": 51.389
+        },
+        "origin_story": "Pilaf, or 'polo' in Persian, has been a cornerstone of Iranian cuisine for centuries. In Tehran, lamb pilaf represents both celebration and comfort—a fragrant dish where rice is treated with as much reverence as the meat. With influences from the Silk Road and Persian royal courts, each grain is infused with saffron, spice, and story.",
+        "ingredients": [
+            "2 cups basmati rice",
+            "400g lamb, cubed",
+            "1 onion, chopped",
+            "1/2 tsp saffron threads, bloomed in warm water",
+            "1/2 tsp turmeric",
+            "1/2 tsp cinnamon",
+            "Salt and pepper to taste",
+            "Butter or oil"
+        ],
+        "steps": [
+            "Step 1: Rinse and soak the rice for 30 minutes.",
+            "Step 2: In a pot, sauté onions in oil until golden. Add lamb, turmeric, salt, and pepper. Cook until browned and tender.",
+            "Step 3: Parboil the rice in salted water until halfway cooked. Drain.",
+            "Step 4: Layer lamb and rice in a pot, drizzle saffron and butter on top. Cover with a lid wrapped in a cloth to trap steam.",
+            "Step 5: Cook on low heat for 30–40 minutes to form a golden tahdig crust. Serve hot."
+        ],
+        "image": "images/lamb_pilaf.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "烤扇贝",
+        "local_name": "Garlic Butter Scallops",
+        "country": "China",
+        "city": "Qingdao",
+        "coordinates": {
+            "lat": 36.0671,
+            "long": 120.3826
+        },
+        "origin_story": "Qingdao, a coastal city famed for its seafood markets and German colonial heritage, has long celebrated simple, grilled shellfish. These scallops, cooked in their shells with garlic and butter, embody the city's love for briny freshness and smoky seaside aromas.",
+        "ingredients": [
+            "6 scallops in shell",
+            "2 tbsp butter, melted",
+            "4 cloves garlic, minced",
+            "Chopped spring onion",
+            "Soy sauce, to taste"
+        ],
+        "steps": [
+            "Step 1: Clean scallops and place them back in half-shells.",
+            "Step 2: Top each with garlic, melted butter, and a splash of soy sauce.",
+            "Step 3: Grill over medium heat for 5–7 minutes until bubbling.",
+            "Step 4: Garnish with chopped spring onion and serve hot."
+        ],
+        "image": "images/garlic_scallops.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Bratwurst mit Sauerkraut",
+        "local_name": "German Sausage with Sauerkraut",
+        "country": "Germany",
+        "city": "Munich",
+        "coordinates": {
+            "lat": 48.1351,
+            "long": 11.582
+        },
+        "origin_story": "A staple of Bavarian beer gardens, bratwurst with sauerkraut pairs juicy pork sausage with the tang of fermented cabbage. Rooted in centuries of Alpine preservation techniques, this dish is now a festive centerpiece at Oktoberfest and family meals alike.",
+        "ingredients": [
+            "4 pork bratwurst sausages",
+            "2 cups sauerkraut",
+            "1 small onion, sliced",
+            "1 tbsp caraway seeds",
+            "1 tbsp mustard",
+            "Butter for frying"
+        ],
+        "steps": [
+            "Step 1: Sauté onions in butter until soft.",
+            "Step 2: Add sauerkraut and caraway seeds. Simmer for 15 minutes.",
+            "Step 3: Grill or pan-fry bratwursts until browned.",
+            "Step 4: Serve hot sausages over warm sauerkraut with mustard."
+        ],
+        "image": "images/bratwurst_sauerkraut.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Gulyás",
+        "local_name": "Goulash",
+        "country": "Hungary",
+        "city": "Budapest",
+        "coordinates": {
+            "lat": 47.4979,
+            "long": 19.0402
+        },
+        "origin_story": "Originally cooked by Hungarian herdsmen in cauldrons over open fires, gulyás is a hearty beef stew seasoned with paprika—a spice synonymous with the country. From shepherd’s fields to fine restaurants, it remains a warm embrace of Hungarian identity.",
+        "ingredients": [
+            "500g beef chuck, cubed",
+            "2 onions, chopped",
+            "2 carrots, sliced",
+            "2 potatoes, cubed",
+            "1 tbsp sweet paprika",
+            "1 bell pepper, sliced",
+            "3 cups beef stock",
+            "Salt and pepper to taste"
+        ],
+        "steps": [
+            "Step 1: Brown onions in oil, add paprika, then beef.",
+            "Step 2: Add stock, cover, and simmer for 1.5 hours.",
+            "Step 3: Add carrots, potatoes, and bell pepper.",
+            "Step 4: Cook another 30 minutes until tender. Serve hot."
+        ],
+        "image": "images/goulash.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "แกงเขียวหวาน",
+        "local_name": "Green Curry",
+        "country": "Thailand",
+        "city": "Bangkok",
+        "coordinates": {
+            "lat": 13.7563,
+            "long": 100.5018
+        },
+        "origin_story": "Green curry is a vibrant reflection of Thailand’s royal kitchens, balancing the spice of green chilies with sweet coconut and aromatic herbs. Originating in central Thailand, it’s now a global favorite known for its bold yet balanced complexity.",
+        "ingredients": [
+            "400ml coconut milk",
+            "200g chicken thighs, sliced",
+            "2 tbsp green curry paste",
+            "1 cup Thai eggplants",
+            "Fresh basil leaves",
+            "1 tbsp fish sauce",
+            "1 tsp palm sugar"
+        ],
+        "steps": [
+            "Step 1: Heat curry paste in coconut milk until fragrant.",
+            "Step 2: Add chicken and cook until sealed.",
+            "Step 3: Add eggplants, simmer until soft.",
+            "Step 4: Season with fish sauce and sugar. Stir in basil and serve."
+        ],
+        "image": "images/green_curry.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "焼き鳥",
+        "local_name": "Grilled Chicken Skewers",
+        "country": "Japan",
+        "city": "Fukuoka",
+        "coordinates": {
+            "lat": 33.5904,
+            "long": 130.4017
+        },
+        "origin_story": "Yakitori became popular in post-war Japan as skewered chicken grilled over charcoal in smoky alleyways and izakayas. In Fukuoka, the flavors are simple yet precise, highlighting the craftsmanship of Japanese street food culture.",
+        "ingredients": [
+            "300g chicken thigh, cubed",
+            "Spring onion pieces",
+            "Bamboo skewers",
+            "2 tbsp soy sauce",
+            "1 tbsp mirin",
+            "1 tbsp sake",
+            "1 tsp sugar"
+        ],
+        "steps": [
+            "Step 1: Thread chicken and scallions alternately onto skewers.",
+            "Step 2: Mix sauce ingredients in a pan and reduce slightly.",
+            "Step 3: Grill skewers while brushing with sauce until glazed.",
+            "Step 4: Serve hot with extra sauce."
+        ],
+        "image": "images/yakitori.jpg",
+        "category": "Snack",
+        "hidden": false
+    },
+    {
+        "name": "Γύρος",
+        "local_name": "Gyros",
+        "country": "Greece",
+        "city": "Athens",
+        "coordinates": {
+            "lat": 37.9838,
+            "long": 23.7275
+        },
+        "origin_story": "Gyros, meaning 'turn' in Greek, refers to meat slow-roasted on a vertical spit—a culinary tradition with Byzantine and Ottoman roots. In Athens, gyros evolved into a beloved street food, wrapped in pita with tangy yogurt and crisp veggies.",
+        "ingredients": [
+            "300g pork or chicken, sliced",
+            "2 pita breads",
+            "1/2 cup tzatziki sauce",
+            "Tomato and onion slices",
+            "Paprika and oregano"
+        ],
+        "steps": [
+            "Step 1: Marinate meat with herbs and oil. Grill or pan-fry until crispy.",
+            "Step 2: Warm pita, spread with tzatziki.",
+            "Step 3: Add meat, tomatoes, onions, and a sprinkle of paprika.",
+            "Step 4: Roll and serve as a wrap."
+        ],
+        "image": "images/gyros.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Haggis",
+        "local_name": "Haggis",
+        "country": "Scotland",
+        "city": "Edinburgh",
+        "coordinates": {
+            "lat": 55.9533,
+            "long": -3.1883
+        },
+        "origin_story": "Haggis, often poetically celebrated by Robert Burns, is a symbol of Scottish heritage. Traditionally made from sheep's offal mixed with oats and spices, it was a practical way to use every part of the animal—and remains the centerpiece of Burns Night feasts.",
+        "ingredients": [
+            "500g sheep offal (liver, heart, lungs)",
+            "1 cup steel-cut oats",
+            "1 onion, minced",
+            "1 tsp black pepper",
+            "1 tsp salt",
+            "1/2 tsp allspice",
+            "Sheep stomach (or sausage casing)"
+        ],
+        "steps": [
+            "Step 1: Boil offal, mince finely, and mix with oats, onion, and spices.",
+            "Step 2: Stuff mixture into casing.",
+            "Step 3: Simmer for 2–3 hours. Do not boil.",
+            "Step 4: Serve with neeps and tatties (mashed turnips and potatoes)."
+        ],
+        "image": "images/haggis.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "煎饼果子",
+        "local_name": "Jianbing",
+        "country": "China",
+        "city": "Tianjin",
+        "coordinates": {
+            "lat": 39.3434,
+            "long": 117.3616
+        },
+        "origin_story": "Jianbing began as a humble breakfast for Chinese laborers, made quickly on street-side griddles before sunrise. Tianjin is especially famous for its crisp, savory jianbing—thin batter, fried dough, eggs, and bold sauces folded into a perfect handheld bite.",
+        "ingredients": [
+            "1/2 cup mung bean flour",
+            "1 egg",
+            "Fried dough stick (youtiao) or cracker",
+            "1 tbsp hoisin sauce",
+            "1 tbsp chili paste",
+            "Chopped scallions and cilantro"
+        ],
+        "steps": [
+            "Step 1: Mix flour with water to make a thin batter.",
+            "Step 2: Pour batter onto a hot griddle and spread thinly. Crack egg on top.",
+            "Step 3: Add sauces, herbs, and youtiao.",
+            "Step 4: Fold into quarters and serve immediately."
+        ],
+        "image": "images/jianbing.jpg",
+        "category": "Snack",
+        "hidden": false
+    },
+    {
+        "name": "Laksa",
+        "local_name": "Laksa",
+        "country": "Malaysia",
+        "city": "Penang",
+        "coordinates": {
+            "lat": 5.4164,
+            "long": 100.3327
+        },
+        "origin_story": "A spicy, tangy noodle soup born from the Peranakan fusion of Chinese and Malay traditions, Laksa in Penang is intensely fragrant with fish-based broth and tamarind. It reflects the melting pot of Southeast Asian trade and cuisine.",
+        "ingredients": [
+            "200g rice noodles",
+            "150g mackerel or sardines",
+            "1 tbsp tamarind paste",
+            "1 stalk lemongrass",
+            "Chili paste to taste",
+            "Mint, cucumber, and pineapple slices (for garnish)"
+        ],
+        "steps": [
+            "Step 1: Boil fish, flake meat, and strain broth.",
+            "Step 2: Simmer broth with tamarind, lemongrass, and chili paste.",
+            "Step 3: Cook noodles and place in bowl. Pour hot broth over.",
+            "Step 4: Garnish with herbs, cucumber, and pineapple."
+        ],
+        "image": "images/laksa.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "طاجين",
+        "local_name": "Lamb Tagine",
+        "country": "Morocco",
+        "city": "Marrakesh",
+        "coordinates": {
+            "lat": 31.6295,
+            "long": -7.9811
+        },
+        "origin_story": "Tagine takes its name from the conical clay pot it's cooked in—an ingenious design that locks in steam and flavor. In Marrakesh, slow-cooked lamb with dried fruits and warm spices tells the story of Berber hospitality, spice trade routes, and centuries of communal feasting.",
+        "ingredients": [
+            "500g lamb shoulder, cubed",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 tsp ground cumin",
+            "1/2 tsp cinnamon",
+            "100g dried apricots or prunes",
+            "1 tbsp honey",
+            "Salt and pepper",
+            "Olive oil"
+        ],
+        "steps": [
+            "Step 1: Brown lamb in olive oil, then remove and set aside.",
+            "Step 2: Sauté onions and garlic. Add spices and return lamb to pot.",
+            "Step 3: Add dried fruit, honey, salt, and pepper. Cover and simmer for 1.5–2 hours.",
+            "Step 4: Serve with couscous or bread."
+        ],
+        "image": "images/lamb_tagine.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "兰州牛肉面",
+        "local_name": "Lanzhou Beef Noodles",
+        "country": "China",
+        "city": "Lanzhou",
+        "coordinates": {
+            "lat": 36.0611,
+            "long": 103.8343
+        },
+        "origin_story": "Famous for hand-pulled noodles and a clear yet complex beef broth, Lanzhou Beef Noodles are a halal specialty created by Hui Muslim chefs. This iconic noodle soup follows five rules: clear broth, white radish, red chili oil, green herbs, and yellow noodles.",
+        "ingredients": [
+            "300g beef brisket",
+            "1 piece daikon radish",
+            "Chinese wheat noodles",
+            "1 tbsp chili oil",
+            "1 tbsp soy sauce",
+            "Garlic, ginger, scallions",
+            "Fresh coriander and parsley"
+        ],
+        "steps": [
+            "Step 1: Simmer beef with ginger, scallions, and spices until tender.",
+            "Step 2: Slice radish and simmer in broth.",
+            "Step 3: Hand-pull or boil fresh noodles separately.",
+            "Step 4: Assemble bowl with noodles, beef slices, radish, herbs, and chili oil."
+        ],
+        "image": "images/lanzhou_beef_noodles.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Macaron",
+        "local_name": "Macaron",
+        "country": "France",
+        "city": "Strasbourg",
+        "coordinates": {
+            "lat": 48.5734,
+            "long": 7.7521
+        },
+        "origin_story": "Though often linked to Parisian elegance, the macaron’s earliest French roots trace to Strasbourg, brought by Italian monks in the Renaissance. These colorful, airy confections of almond meringue and buttercream now symbolize precision and pastry perfection.",
+        "ingredients": [
+            "100g almond flour",
+            "100g powdered sugar",
+            "75g egg whites (aged)",
+            "100g granulated sugar",
+            "Food coloring",
+            "Buttercream or ganache (for filling)"
+        ],
+        "steps": [
+            "Step 1: Sift almond flour and powdered sugar together.",
+            "Step 2: Whip egg whites into stiff peaks, adding granulated sugar gradually.",
+            "Step 3: Fold dry mix into meringue. Pipe small rounds on baking sheet.",
+            "Step 4: Rest until skin forms. Bake at 150°C (300°F) for 12–15 mins.",
+            "Step 5: Cool, then sandwich with filling."
+        ],
+        "image": "images/macaron.jpg",
+        "category": "Dessert",
+        "hidden": false
+    },
+    {
+        "name": "ข้าวเหนียวมะม่วง",
+        "local_name": "Mango Sticky Rice",
+        "country": "Thailand",
+        "city": "Chiang Mai",
+        "coordinates": {
+            "lat": 18.7883,
+            "long": 98.9853
+        },
+        "origin_story": "This sweet-salty Thai dessert from Chiang Mai highlights glutinous rice soaked in rich coconut cream, paired with fragrant ripe mango. Once reserved for special occasions, it now captures the essence of Thailand’s tropical abundance and love of harmony.",
+        "ingredients": [
+            "1 cup glutinous rice",
+            "1 cup coconut milk",
+            "1/4 cup sugar",
+            "1/2 tsp salt",
+            "1 ripe mango, sliced",
+            "Sesame seeds or mung beans for garnish"
+        ],
+        "steps": [
+            "Step 1: Soak rice for 4–6 hours, then steam until tender.",
+            "Step 2: Heat coconut milk with sugar and salt. Stir into hot rice.",
+            "Step 3: Let rest to absorb.",
+            "Step 4: Serve with sliced mango and garnish."
+        ],
+        "image": "images/mango_sticky_rice.jpg",
+        "category": "Dessert",
+        "hidden": false
+    },
+    {
+        "name": "Burrito",
+        "local_name": "Mexican Burrito",
+        "country": "Mexico",
+        "city": "Mexico City",
+        "coordinates": {
+            "lat": 19.4326,
+            "long": -99.1332
+        },
+        "origin_story": "The modern burrito likely emerged in Northern Mexico, but in Mexico City’s bustling street corners it became an art form—handheld, hearty, and endlessly customizable. Wrapped in flour tortillas, burritos are a portable reflection of culinary fusion and resourcefulness.",
+        "ingredients": [
+            "2 large flour tortillas",
+            "200g beef or chicken, cooked",
+            "1/2 cup cooked rice",
+            "1/2 cup beans",
+            "Salsa, cheese, and sour cream",
+            "Lettuce or avocado (optional)"
+        ],
+        "steps": [
+            "Step 1: Warm tortillas and fill with meat, rice, beans, and toppings.",
+            "Step 2: Fold sides, then roll into a tight wrap.",
+            "Step 3: Toast on a pan if desired. Serve warm."
+        ],
+        "image": "images/burrito.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Nasi Goreng",
+        "local_name": "Nasi Goreng",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "coordinates": {
+            "lat": -6.2088,
+            "long": 106.8456
+        },
+        "origin_story": "Nasi Goreng, meaning 'fried rice,' is Indonesia's national comfort food. Emerging as a way to use up leftover rice, Jakarta’s version includes sweet soy sauce, crispy shallots, and fiery sambal—a true expression of balance and bold flavor.",
+        "ingredients": [
+            "2 cups cooked rice (day old)",
+            "2 cloves garlic, minced",
+            "1 shallot, chopped",
+            "1 tbsp kecap manis (sweet soy sauce)",
+            "1 egg",
+            "Chili paste (sambal) to taste",
+            "Fried shallots and cucumber slices"
+        ],
+        "steps": [
+            "Step 1: Fry garlic and shallots in oil until golden.",
+            "Step 2: Add rice and stir-fry with kecap manis and sambal.",
+            "Step 3: Top with a fried egg, shallots, and cucumber."
+        ],
+        "image": "images/nasi_goreng.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "お好み焼き",
+        "local_name": "Okonomiyaki",
+        "country": "Japan",
+        "city": "Osaka",
+        "coordinates": {
+            "lat": 34.6937,
+            "long": 135.5023
+        },
+        "origin_story": "Okonomiyaki, meaning 'grilled as you like it,' rose to popularity in Osaka as a post-war comfort food. Street stalls and izakayas let diners customize savory pancakes with cabbage, pork, seafood, and a drizzle of sweet sauce—a symbol of Japan's creative, communal food culture.",
+        "ingredients": [
+            "1 cup all-purpose flour",
+            "2/3 cup dashi or water",
+            "2 cups shredded cabbage",
+            "2 eggs",
+            "100g pork belly or shrimp",
+            "Okonomiyaki sauce",
+            "Kewpie mayo, bonito flakes, aonori"
+        ],
+        "steps": [
+            "Step 1: Mix flour, dashi, eggs, and cabbage in a bowl.",
+            "Step 2: Pour batter onto hot griddle, top with pork or shrimp.",
+            "Step 3: Cook until golden on both sides. Drizzle with sauce, mayo, flakes, and aonori."
+        ],
+        "image": "images/okonomiyaki.jpg",
+        "category": "Snack",
+        "hidden": false
+    },
+    {
+        "name": "Pierogi",
+        "local_name": "Pierogi",
+        "country": "Poland",
+        "city": "Warsaw",
+        "coordinates": {
+            "lat": 52.2297,
+            "long": 21.0122
+        },
+        "origin_story": "Pierogi are Poland’s heartwarming dumplings, with roots tracing back to medieval trade and Eastern European hospitality. Stuffed with potatoes, cheese, or fruit, and either boiled or pan-fried, they are a centerpiece at family tables and festivals alike.",
+        "ingredients": [
+            "2 cups flour",
+            "1/2 cup warm water",
+            "1 egg",
+            "1/2 tsp salt",
+            "1 cup mashed potatoes",
+            "1/2 cup farmer's cheese",
+            "Butter for frying"
+        ],
+        "steps": [
+            "Step 1: Mix flour, egg, water, and salt to form dough. Let rest.",
+            "Step 2: Mix potato and cheese for filling.",
+            "Step 3: Roll out dough, cut circles, fill, and seal.",
+            "Step 4: Boil until floating, then pan-fry with butter (optional)."
+        ],
+        "image": "images/pierogi.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Poutine",
+        "local_name": "Poutine",
+        "country": "Canada",
+        "city": "Quebec City",
+        "coordinates": {
+            "lat": 46.8139,
+            "long": -71.2082
+        },
+        "origin_story": "Poutine was born in rural Quebec in the 1950s, when a customer requested fries with cheese curds and gravy. Originally dismissed as messy, it became an iconic Canadian dish and a late-night essential—salty, cheesy, crispy, and proud.",
+        "ingredients": [
+            "2 cups French fries",
+            "1 cup cheese curds",
+            "1 cup brown gravy",
+            "Salt to taste"
+        ],
+        "steps": [
+            "Step 1: Fry potatoes until crispy.",
+            "Step 2: Layer cheese curds over fries.",
+            "Step 3: Pour hot gravy on top and serve immediately."
+        ],
+        "image": "images/poutine.jpg",
+        "category": "Snack",
+        "hidden": false
+    },
+    {
+        "name": "Quiche Lorraine",
+        "local_name": "Quiche Lorraine",
+        "country": "France",
+        "city": "Metz",
+        "coordinates": {
+            "lat": 49.1193,
+            "long": 6.1757
+        },
+        "origin_story": "Quiche Lorraine originated in the Alsace-Lorraine region as a rustic tart filled with cream, eggs, and bacon. Over time, it evolved into a refined French classic, enjoyed in cafés and brunch tables around the world.",
+        "ingredients": [
+            "1 pie crust",
+            "3 eggs",
+            "1 cup heavy cream",
+            "100g bacon, diced",
+            "1/2 cup grated Gruyère cheese",
+            "Salt and nutmeg"
+        ],
+        "steps": [
+            "Step 1: Blind bake pie crust at 180°C (350°F) for 10 minutes.",
+            "Step 2: Fry bacon until crisp.",
+            "Step 3: Whisk eggs, cream, cheese, and seasoning. Add bacon.",
+            "Step 4: Pour into crust and bake for 30–35 minutes until set."
+        ],
+        "image": "images/quiche_lorraine.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Ratatouille",
+        "local_name": "Ratatouille",
+        "country": "France",
+        "city": "Nice",
+        "coordinates": {
+            "lat": 43.7102,
+            "long": 7.262
+        },
+        "origin_story": "Ratatouille began as a humble Provençal stew for farmers to use summer vegetables. From its sun-soaked roots in Nice, it became a symbol of simplicity and seasonal abundance, elevated by its rich colors and layered flavors.",
+        "ingredients": [
+            "1 eggplant",
+            "1 zucchini",
+            "1 bell pepper",
+            "1 onion",
+            "2 tomatoes",
+            "2 cloves garlic",
+            "Olive oil, thyme, salt"
+        ],
+        "steps": [
+            "Step 1: Dice vegetables. Sauté onion and garlic in olive oil.",
+            "Step 2: Add eggplant and cook until soft.",
+            "Step 3: Add remaining vegetables, herbs, and simmer for 30 minutes.",
+            "Step 4: Serve warm with bread or rice."
+        ],
+        "image": "images/ratatouille.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
         "name": "红烧肉",
-        "local_name": "Red Braised Pork Belly",
-        "country": "Jiangnan, China",
+        "local_name": "Red Braised Pork",
+        "country": "China",
+        "city": "Shanghai",
         "coordinates": {
             "lat": 31.2304,
             "long": 121.4737
         },
-        "origin_story": "In old Shanghai alleyways, red braised pork wasn't just food—it was a sign of celebration. Unlike the spicier Hunan version, the Shanghai style is rich, glossy, and slightly sweet, made with caramelized sugar and slow-braised pork belly. Back then, it was a rare treat, usually served only during the New Year or special gatherings. Children would crowd around the stove, drawn by the scent, waiting eagerly for the first tender, glistening bite. To many Shanghainese, this dish isn't just delicious—it's the flavor of home and warmth.",
+        "origin_story": "Red braised pork is Shanghai’s most comforting dish, with glistening cubes of pork belly caramelized in soy and sugar. Some trace its political popularity to Chairman Mao, others to alleyway kitchens—either way, it’s sweet, savory, and unforgettable.",
         "ingredients": [
             "500g pork belly",
-            "3 tbsp soy sauce",
             "2 tbsp sugar",
-            "Shaoxing wine",
-            "Star anise",
-            "Ginger"
+            "3 tbsp soy sauce",
+            "1 tbsp Shaoxing wine",
+            "Star anise and ginger",
+            "Water to cover"
         ],
         "steps": [
-            "Cut pork belly into chunks.",
-            "Caramelize sugar and sear the pork.",
-            "Add soy sauce, wine, and spices.",
-            "Simmer for 1 hour or until tender."
+            "Step 1: Blanch pork, then rinse and cube.",
+            "Step 2: Caramelize sugar in a wok, then add pork to coat.",
+            "Step 3: Add soy sauce, wine, spices, and water. Simmer for 1 hour.",
+            "Step 4: Reduce sauce until glossy."
         ],
-        "image": "",
+        "image": "images/red_braised_pork.jpg",
         "category": "Main",
-        "hidden": false,
-        "click_count": 8,
-        "messages": [
-            "The creator thinks the Mao-style tastes like disappointment.",
-            "Sorry Chairman, Shanghai wins this round.",
-            "Oh, you clicked 8 times!",
-            "The creator firmly stands with sugar, soy sauce, and elegance."
-        ]
+        "hidden": false
+    },
+    {
+        "name": "Paella",
+        "local_name": "Seafood Paella",
+        "country": "Spain",
+        "city": "Valencia",
+        "coordinates": {
+            "lat": 39.4699,
+            "long": -0.3763
+        },
+        "origin_story": "Paella was born in the rice fields of Valencia, where workers cooked communal meals over open flames. Over time, seafood replaced rabbit and snails, and saffron gave it its golden hue—making it a festive dish served from pan to table.",
+        "ingredients": [
+            "1 cup paella rice",
+            "2 cups seafood stock",
+            "100g shrimp",
+            "100g mussels",
+            "1/4 cup peas",
+            "1/2 onion, chopped",
+            "1 tsp paprika, saffron threads"
+        ],
+        "steps": [
+            "Step 1: Sauté onion and paprika in oil.",
+            "Step 2: Add rice, saffron, and stock. Simmer uncovered.",
+            "Step 3: Arrange seafood on top, add peas. Cook until rice is tender.",
+            "Step 4: Let rest before serving."
+        ],
+        "image": "images/paella.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "שקשוקה",
+        "local_name": "Shakshuka",
+        "country": "Israel",
+        "city": "Tel Aviv",
+        "coordinates": {
+            "lat": 32.0853,
+            "long": 34.7818
+        },
+        "origin_story": "Originally from North Africa, shakshuka found new life in Tel Aviv cafés and family breakfasts. Eggs poached in spicy tomato sauce became a brunch staple, symbolizing community, warmth, and the fusion of Jewish and Arab culinary roots.",
+        "ingredients": [
+            "1 onion, chopped",
+            "2 cloves garlic",
+            "4 tomatoes or 1 can crushed tomatoes",
+            "1 tbsp harissa or chili paste",
+            "4 eggs",
+            "Parsley and feta (optional)"
+        ],
+        "steps": [
+            "Step 1: Sauté onion and garlic. Add tomatoes and spices.",
+            "Step 2: Simmer until thick. Make wells and crack in eggs.",
+            "Step 3: Cover and cook until whites set. Garnish and serve with bread."
+        ],
+        "image": "images/shakshuka.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Shepherd's Pie",
+        "local_name": "Shepherd's Pie",
+        "country": "Ireland",
+        "city": "Dublin",
+        "coordinates": {
+            "lat": 53.3498,
+            "long": -6.2603
+        },
+        "origin_story": "Born from rural Irish frugality, Shepherd’s Pie turned leftover lamb into comfort food. Topped with creamy mashed potatoes, it warmed hearts and bellies across generations, and now brings pub classics to the modern table.",
+        "ingredients": [
+            "400g ground lamb",
+            "1 onion, diced",
+            "1 carrot, chopped",
+            "1/2 cup peas",
+            "2 cups mashed potatoes",
+            "Salt, pepper, thyme"
+        ],
+        "steps": [
+            "Step 1: Cook lamb with onion, carrot, peas, and seasoning.",
+            "Step 2: Spoon into baking dish and top with mashed potatoes.",
+            "Step 3: Bake at 180°C (350°F) until golden brown."
+        ],
+        "image": "images/shepherds_pie.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "清蒸石斑鱼",
+        "local_name": "Steamed Grouper",
+        "country": "China",
+        "city": "Hong Kong",
+        "coordinates": {
+            "lat": 22.3193,
+            "long": 114.1694
+        },
+        "origin_story": "Cantonese chefs prize freshness, and nowhere is that more evident than in steamed grouper. In Hong Kong's seafood restaurants, live fish is steamed with ginger and scallions—clean, elegant, and deeply respectful of the ingredient.",
+        "ingredients": [
+            "1 whole grouper, cleaned",
+            "2 scallions, sliced",
+            "3 slices ginger",
+            "2 tbsp soy sauce",
+            "1 tbsp hot oil"
+        ],
+        "steps": [
+            "Step 1: Place fish on plate with ginger and steam for 10–12 mins.",
+            "Step 2: Remove, top with scallions and hot oil.",
+            "Step 3: Drizzle soy sauce and serve immediately."
+        ],
+        "image": "images/steamed_grouper.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "寿司",
+        "local_name": "Sushi",
+        "country": "Japan",
+        "city": "Tokyo",
+        "coordinates": {
+            "lat": 35.6895,
+            "long": 139.6917
+        },
+        "origin_story": "Originally a way to preserve fish in fermented rice, sushi evolved in Edo (now Tokyo) into a fast, elegant meal served by nimble chefs behind counters. With perfect rice, pristine fish, and precise form, sushi became Japan’s culinary icon.",
+        "ingredients": [
+            "2 cups sushi rice",
+            "Rice vinegar, sugar, salt",
+            "Fresh sashimi-grade fish (e.g., tuna, salmon)",
+            "Nori (seaweed sheets)",
+            "Wasabi, soy sauce, pickled ginger"
+        ],
+        "steps": [
+            "Step 1: Cook and season the rice with vinegar mix. Let cool.",
+            "Step 2: Slice fish into thin pieces.",
+            "Step 3: Assemble nigiri, rolls, or chirashi as desired. Serve with condiments."
+        ],
+        "image": "images/sushi.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "天ぷら",
+        "local_name": "Tempura",
+        "country": "Japan",
+        "city": "Kyoto",
+        "coordinates": {
+            "lat": 35.0116,
+            "long": 135.7681
+        },
+        "origin_story": "Tempura was introduced to Japan by Portuguese missionaries in the 16th century. The Japanese refined the frying technique into an art, creating light, crisp coatings that highlight seasonal vegetables and seafood, often served with dipping sauce and rice.",
+        "ingredients": [
+            "Shrimp, sweet potato, eggplant, green beans",
+            "1 cup flour",
+            "1 egg",
+            "1 cup cold water",
+            "Oil for frying",
+            "Tentsuyu dipping sauce"
+        ],
+        "steps": [
+            "Step 1: Chill batter ingredients. Mix lightly—lumps are okay.",
+            "Step 2: Heat oil to 170–180°C. Dip ingredients in batter.",
+            "Step 3: Fry until golden. Drain and serve with sauce."
+        ],
+        "image": "images/tempura.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Tiramisù",
+        "local_name": "Tiramisu",
+        "country": "Italy",
+        "city": "Venice",
+        "coordinates": {
+            "lat": 45.4408,
+            "long": 12.3155
+        },
+        "origin_story": "Born in the Veneto region in the 1960s, Tiramisu translates to 'pick me up'—a nod to its espresso and cocoa. Layered with mascarpone cream and ladyfingers soaked in coffee, it became a beloved dessert across Italian households and beyond.",
+        "ingredients": [
+            "200g ladyfingers (savoiardi)",
+            "250g mascarpone cheese",
+            "2 eggs, separated",
+            "1/2 cup sugar",
+            "1 cup espresso or strong coffee",
+            "Cocoa powder"
+        ],
+        "steps": [
+            "Step 1: Beat egg yolks with sugar, fold in mascarpone.",
+            "Step 2: Beat egg whites until stiff and fold in.",
+            "Step 3: Dip ladyfingers in coffee, layer with cream. Repeat and chill.",
+            "Step 4: Dust with cocoa before serving."
+        ],
+        "image": "images/tiramisu.jpg",
+        "category": "Dessert",
+        "hidden": false
+    },
+    {
+        "name": "とんかつ",
+        "local_name": "Tonkatsu",
+        "country": "Japan",
+        "city": "Nagoya",
+        "coordinates": {
+            "lat": 35.1815,
+            "long": 136.9066
+        },
+        "origin_story": "Tonkatsu—a breaded, deep-fried pork cutlet—emerged in Japan in the late 19th century, inspired by European cutlets. It quickly became a favorite, especially in Nagoya, where it’s served with rich miso sauce and shredded cabbage.",
+        "ingredients": [
+            "2 pork loin cutlets",
+            "Salt and pepper",
+            "Flour, egg, and panko breadcrumbs",
+            "Oil for frying",
+            "Tonkatsu sauce, shredded cabbage"
+        ],
+        "steps": [
+            "Step 1: Season pork, then coat in flour, egg, and panko.",
+            "Step 2: Deep-fry until golden and cooked through.",
+            "Step 3: Slice and serve with sauce and cabbage."
+        ],
+        "image": "images/tonkatsu.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Kebap",
+        "local_name": "Turkish Kebab",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "coordinates": {
+            "lat": 41.0082,
+            "long": 28.9784
+        },
+        "origin_story": "Kebab dates back to the medieval soldiers of the Ottoman Empire, who grilled meat over open flames. In Istanbul, kebabs took many forms—doner, shish, or iskender—each with their own spices, sauces, and regional pride.",
+        "ingredients": [
+            "500g lamb or beef, cubed",
+            "Onion, garlic, yogurt",
+            "Paprika, cumin, salt",
+            "Skewers",
+            "Flatbread or rice for serving"
+        ],
+        "steps": [
+            "Step 1: Marinate meat in yogurt, spices, and aromatics overnight.",
+            "Step 2: Skewer and grill over charcoal or high heat.",
+            "Step 3: Serve hot with bread, vegetables, or rice."
+        ],
+        "image": "images/kebab.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Wiener Schnitzel",
+        "local_name": "Wiener Schnitzel",
+        "country": "Austria",
+        "city": "Vienna",
+        "coordinates": {
+            "lat": 48.2082,
+            "long": 16.3738
+        },
+        "origin_story": "The Wiener Schnitzel, a thin veal cutlet breaded and fried to golden perfection, became Austria’s culinary symbol in the 19th century. Served with lemon and potatoes, it represents Viennese elegance and culinary precision.",
+        "ingredients": [
+            "2 veal cutlets",
+            "Flour, eggs, breadcrumbs",
+            "Salt and pepper",
+            "Butter and oil for frying",
+            "Lemon wedges"
+        ],
+        "steps": [
+            "Step 1: Pound veal thin, season lightly.",
+            "Step 2: Dredge in flour, egg, then breadcrumbs.",
+            "Step 3: Fry in butter/oil until golden. Drain and serve with lemon."
+        ],
+        "image": "images/wiener_schnitzel.jpg",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Lasagna alla Bolognese",
+        "local_name": "Lasagna",
+        "country": "Italy",
+        "city": "Bologna",
+        "coordinates": {
+            "lat": 44.4949,
+            "long": 11.3426
+        },
+        "origin_story": "Lasagna, one of Italy's most iconic comfort foods, originated in the city of Bologna, where generations have perfected its rich layers of ragù, béchamel, and fresh pasta sheets. Dating back to the Middle Ages, it was once a luxury dish for aristocrats. Today, it's a Sunday tradition in many Italian homes, where recipes are closely guarded family secrets passed from nonna to grandchild.",
+        "ingredients": [
+            "12 fresh lasagna sheets",
+            "500g ground beef or pork",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "800g canned tomatoes",
+            "3 tbsp tomato paste",
+            "200ml red wine",
+            "Salt, pepper, nutmeg",
+            "50g butter, 50g flour, 500ml milk (béchamel)",
+            "200g grated Parmesan cheese",
+            "Olive oil"
+        ],
+        "steps": [
+            "Step 1: Sauté onion and garlic in olive oil. Add meat and brown.",
+            "Step 2: Pour in wine, tomatoes, and paste. Simmer for 1 hour to make ragù.",
+            "Step 3: Make béchamel by whisking butter, flour, and milk until thick.",
+            "Step 4: In a baking dish, layer pasta, ragù, béchamel, and Parmesan.",
+            "Step 5: Repeat layers and finish with cheese on top. Bake at 180°C for 40 minutes.",
+            "Step 6: Let rest for 10 minutes before serving."
+        ],
+        "image": "images/lasagna.jpg",
+        "category": "Main",
+        "hidden": false
     }
 ]

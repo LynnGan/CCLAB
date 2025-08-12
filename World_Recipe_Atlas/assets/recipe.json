@@ -27,7 +27,7 @@
             "Step 5: Flip when bubbles form and cook until golden.",
             "Step 6: Serve with syrup, butter, or fruit."
         ],
-        "image": "images/pancake.jpg",
+        "image": "assets/pancake.jpg",
         "category": "Main",
         "hidden": false
     },
@@ -1577,32 +1577,6 @@
         "hidden": false
     },
     {
-        "name": "Wiener Schnitzel",
-        "local_name": "Wiener Schnitzel",
-        "country": "Austria",
-        "city": "Vienna",
-        "coordinates": {
-            "lat": 48.2082,
-            "long": 16.3738
-        },
-        "origin_story": "The Wiener Schnitzel, a thin veal cutlet breaded and fried to golden perfection, became Austria’s culinary symbol in the 19th century. Served with lemon and potatoes, it represents Viennese elegance and culinary precision.",
-        "ingredients": [
-            "2 veal cutlets",
-            "Flour, eggs, breadcrumbs",
-            "Salt and pepper",
-            "Butter and oil for frying",
-            "Lemon wedges"
-        ],
-        "steps": [
-            "Step 1: Pound veal thin, season lightly.",
-            "Step 2: Dredge in flour, egg, then breadcrumbs.",
-            "Step 3: Fry in butter/oil until golden. Drain and serve with lemon."
-        ],
-        "image": "images/wiener_schnitzel.jpg",
-        "category": "Main",
-        "hidden": false
-    },
-    {
         "name": "Lasagna alla Bolognese",
         "local_name": "Lasagna",
         "country": "Italy",
@@ -1635,6 +1609,65 @@
         ],
         "image": "images/lasagna.jpg",
         "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Lū'au Stew",
+        "local_name": "Lū'au Stew",
+        "country": "Hawaii",
+        "city": "Honolulu",
+        "coordinates": {
+            "lat": 21.3069,
+            "long": -157.8583
+        },
+        "origin_story": "Rooted in ancient Hawaiian tradition, Lū'au Stew was once prepared for royal feasts and community gatherings. It takes its name from the young taro leaves—lū‘au—slow-cooked with tender meat or seafood in coconut milk. In the days before contact with the West, the stew was often cooked in an underground oven (imu) and shared among family and neighbors as part of a celebration of abundance and gratitude. Today, it remains a comforting taste of home for locals and a reminder of Hawaii’s deep connection to the land and sea.",
+        "ingredients": [
+            "1 lb luau (taro) leaves, cleaned",
+            "1 lb beef, pork, or chicken",
+            "1 cup coconut milk",
+            "1 medium onion, chopped",
+            "2 cloves garlic, minced",
+            "Salt to taste"
+        ],
+        "steps": [
+            "Step 1: Wash and prepare the taro leaves, removing any tough stems.",
+            "Step 2: In a pot, sauté onion and garlic until fragrant.",
+            "Step 3: Add meat and brown evenly.",
+            "Step 4: Stir in coconut milk and taro leaves.",
+            "Step 5: Simmer gently for 1-2 hours until leaves are tender and flavors meld.",
+            "Step 6: Season with salt and serve hot."
+        ],
+        "image": "",
+        "category": "Main",
+        "hidden": false
+    },
+    {
+        "name": "Avocado Toast",
+        "local_name": "Avocado Toast",
+        "country": "California",
+        "city": "Los Angeles",
+        "coordinates": {
+            "lat": 34.0522,
+            "long": -118.2437
+        },
+        "origin_story": "Though avocado toast has roots in various parts of the world, California—especially Los Angeles—turned it into a culinary trend. In the 2010s, fueled by the state’s year-round avocado harvest and the health-conscious food culture, cafés began serving thick slices of artisan bread topped with creamy mashed avocado, sea salt, and creative garnishes. It quickly became a symbol of California’s laid-back yet refined approach to healthy eating, loved by everyone from surfers to Hollywood stars.",
+        "ingredients": [
+            "Sourdough or multigrain bread",
+            "Ripe avocados",
+            "Sea salt",
+            "Lemon juice",
+            "Olive oil",
+            "Optional toppings: cherry tomatoes, microgreens, poached egg, chili flakes"
+        ],
+        "steps": [
+            "Step 1: Toast bread slices until golden and crisp.",
+            "Step 2: Mash ripe avocados with lemon juice and sea salt.",
+            "Step 3: Spread avocado mixture generously over the toast.",
+            "Step 4: Add optional toppings for extra flavor and presentation.",
+            "Step 5: Drizzle with olive oil and serve immediately."
+        ],
+        "image": "",
+        "category": "Snack",
         "hidden": false
     }
 ]

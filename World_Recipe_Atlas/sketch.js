@@ -1,6 +1,7 @@
 let globe;
-let parchmentTexture;
+let parchmentTexture, compass;
 let recipes;
+let popup = null;//textbox popup
 
 let rotationX = 0;   // up/down tilt (degrees)
 let rotationY = 0;   // left/right spin (degrees)
@@ -11,39 +12,60 @@ let dragging = false;
 function preload() { // load assets
   parchmentTexture = loadImage("assets/parchment.jpg");
   recipes = loadJSON("assets/recipe.json"); // not used yet
+  compass = loadImage("assets/compass.png");
 }
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(RADIANS);
   globe = new Globe();
-  textFont("monospace");
+  textFont("Palatino");
   console.log("isArray?", Array.isArray(recipes), recipes);
 
 }
 
 function draw() {
   background(parchmentTexture);
-  globe.drawOutline();
+  // tint("255, 255, 255, 100");
+
+
+  //draw compass upper left
+  push();
+  image(compass, 50, 50, 175, 175);
+  blendMode(MULTIPLY);
+  pop();
+
   //make obj into array
   const list = Array.isArray(recipes) ? recipes : Object.values(recipes);
-
-  globe.plotRecipes(list);
-
+  globe.drawBase(list);
+  blendMode(MULTIPLY);
+  globe.Hover(list);
+  blendMode(BLEND);
 }
+
+
 
 
 //Globe class 
 class Globe {
   constructor() {
-    this.radius = windowWidth / 3;
+    this.radius = windowHeight / 2.50;
+  }
+
+  drawBase(list) {
+    this.drawOutline();
+    this.plotRecipes(list);
   }
 
   drawOutline() {
     noFill();
-    stroke(120);
+    stroke("#2a2119");
     strokeWeight(2);
     ellipse(width / 2, height / 2, this.radius * 2);
+    strokeWeight(1);
+    stroke("#c2a66b");
+    ellipse(width / 2, height / 2, this.radius * 2 + 4);
   }
 
   plotRecipes(list) {
@@ -54,21 +76,44 @@ class Globe {
       let p = this.project(lat, lon);
       if (p) {
         // Draw point
-        fill(0);
+        fill("#6E4F2A");
         noStroke();
-        ellipse(p.x, p.y, map(p.depth, 0, this.radius, 4, 8));
+        ellipse(p.x, p.y, map(p.depth, 0, this.radius, 2, 6));
+        blendMode(MULTIPLY);
 
-        // Draw label
-        fill(0);
-        noStroke();
-        textAlign(CENTER);
-        textSize(12);
-        text(list[i].name, p.x, p.y - 10);
+        // // Draw label
+        // fill("#6E4F2A");
+        // noStroke();
+        // textAlign(CENTER);
+        // textSize(12);
+        // text(list[i].name, p.x, p.y - 10);
+        // blendMode(MULTIPLY);
       }
     }
   }
 
+  Hover(list) {
+    //mouse hover over a recipe, name appears
+    for (let i = 0; i < list.length; i++) {
+      let lat = list[i].coordinates.lat;
+      let lon = list[i].coordinates.long;
 
+      let p = this.project(lat, lon);
+      if (p) {
+        let d = dist(mouseX, mouseY, p.x, p.y);
+        if (d <= 2) {
+          fill("#6E4F2A");
+          noStroke();
+          textAlign(CENTER);
+          textSize(12);
+          text(list[i].name, p.x, p.y - 10);
+          blendMode(MULTIPLY);
+        }
+      }
+    }
+  }
+
+  // Project latitude and longitude onto the globe surface, return screen x,y
   project(lat, lon) {
     const r = this.radius;
 
@@ -95,8 +140,6 @@ class Globe {
     return { x: width / 2 + x1, y: height / 2 - y2, depth: z2 };
   }
 
-
-
 }
 
 function mousePressed() {
@@ -120,5 +163,34 @@ function mouseDragged() {
 
   lastMouseX = mouseX;
   lastMouseY = mouseY;
+}
+
+
+
+// Simple click (separate from drag): open popup if near a spot from plotrecipe
+function mouseClicked() {
+  const list = Array.isArray(recipes) ? recipes : Object.values(recipes);
+
+  for (let i = 0; i < list.length; i++) {
+    let lat = list[i].coordinates.lat;
+    let long = list[i].coordinates.long;
+
+    // project that lat/lon into screen coordinates
+    let p = globe.project(lat, long);
+
+    if (p) { // if on the front side
+      let d = dist(mouseX, mouseY, p.x, p.y);
+      if (d <= Math.abs(2)) {
+        // if clicked near a recipe, open popup
+        popup = list[i];
+        console.log("popup clicked:", popup.name);
+        fill(255, 255, 255, 200);
+        noStroke();
+        rect(p.x, p.y, 300, 200);
+        fill(0);
+        blendMode(MULTIPLY);
+      }
+    }
+  }
 }
 

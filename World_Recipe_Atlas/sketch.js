@@ -1,5 +1,5 @@
 let globe;
-let parchmentTexture, compass;
+let parchmentTexture, compass, worldMap;
 let recipes;
 let popup = null;//textbox popup
 
@@ -8,6 +8,8 @@ let rotationY = 0;   // left/right spin (degrees)
 let lastMouseX = 0;
 let lastMouseY = 0;
 let dragging = false;
+
+let selectedIndex = 0;
 
 function preload() { // load assets
   parchmentTexture = loadImage("assets/parchment.jpg");
@@ -21,14 +23,10 @@ function setup() {
   angleMode(RADIANS);
   globe = new Globe();
   textFont("Palatino");
-  console.log("isArray?", Array.isArray(recipes), recipes);
-
 }
 
 function draw() {
   background(parchmentTexture);
-  // tint("255, 255, 255, 100");
-
 
   //draw compass upper left
   push();
@@ -38,13 +36,28 @@ function draw() {
 
   //make obj into array
   const list = Array.isArray(recipes) ? recipes : Object.values(recipes);
+
   globe.drawBase(list);
   blendMode(MULTIPLY);
   globe.Hover(list);
   blendMode(BLEND);
+
+  if (popup) {
+    blendMode(BLEND);
+    fill(255, 255, 255, 200);
+    noStroke();
+    rect(popup.x, popup.y, 300, 200);
+    fill(0);
+    textAlign(CENTER, TOP);
+    textSize(14);
+    text(popup.name, popup.x + 150, popup.y + 100);
+  } else {
+    fill(0);
+    popup = null;
+    textAlign(CENTER);
+    text("Click on a dot to see a recipe!", width / 2, height - 50);
+  }
 }
-
-
 
 
 //Globe class 
@@ -142,6 +155,64 @@ class Globe {
 
 }
 
+// popup class
+class Popup {
+  constructor(recipe, x, y) {
+    this.recipe = recipe;
+    this.x = x;
+    this.y = y;
+
+    this.w = 300; // width of popup
+    this.h = 200; // height of popup
+
+    if (recipe.image != "") {
+      this.image = loadImage(recipe.image);
+    } else {
+      this.image = null;
+    }
+  }
+
+  draw() {
+    fill(255, 255, 255, 220);
+    noStroke();
+    rect(this.x, this.y, this.w, this.h);
+
+    fill(0);
+    noStroke();
+    textAlign(LEFT, TOP);
+    textSize(14);
+    const name = (this.recipe.name || "").trim();
+    const local = (this.recipe.local_name || "").trim();
+
+    if (local && local.toLowerCase() !== name.toLowerCase()) {
+      text(local + " (" + name + ")", this.x + 10, this.y + 10);
+    } else {
+      text(nm, this.x + 10, this.y + 10);
+    }
+
+    // image
+    if (this.image) {
+      image(this.image, this.x + 10, this.y + 30, 80, 80);
+    }
+
+    // origin story
+    textSize(12);
+    text(this.recipe.origin_story || "", this.x + 100, this.y + 30, this.w - 110, 80);
+
+    // "View recipe" button
+    const buttonW = 110, buttonH = 22;
+    const buttonX = this.x + 10, buttonY = this.y + this.h - 30;
+    fill(200, 150, 50);
+    noStroke();
+    rect(buttonX, buttonY, buttonW, buttonH, 6);
+    fill(255);
+    textAlign(CENTER, CENTER);
+    textSize(12);
+    text("View recipe", buttonX + buttonW / 2, buttonY + buttonH / 2 + 1);
+  }
+}
+
+
 function mousePressed() {
   lastMouseX = mouseX;
   lastMouseY = mouseY;
@@ -166,11 +237,12 @@ function mouseDragged() {
 }
 
 
-
 // Simple click (separate from drag): open popup if near a spot from plotrecipe
 function mouseClicked() {
   const list = Array.isArray(recipes) ? recipes : Object.values(recipes);
 
+
+  let selected = false; // flag to check if a recipe was clicked
   for (let i = 0; i < list.length; i++) {
     let lat = list[i].coordinates.lat;
     let long = list[i].coordinates.long;
@@ -180,17 +252,41 @@ function mouseClicked() {
 
     if (p) { // if on the front side
       let d = dist(mouseX, mouseY, p.x, p.y);
-      if (d <= Math.abs(2)) {
+      if (d <= Math.abs(3)) {
         // if clicked near a recipe, open popup
         popup = list[i];
+        popup.x = p.x; // set popup position
+        popup.y = p.y;
         console.log("popup clicked:", popup.name);
-        fill(255, 255, 255, 200);
-        noStroke();
-        rect(p.x, p.y, 300, 200);
-        fill(0);
-        blendMode(MULTIPLY);
+        //   fill(255, 255, 255, 200);
+        //   noStroke();
+        //   rect(p.x, p.y, 300, 200);
+        //   fill(0);
+        //   blendMode(MULTIPLY);
+        selected = true; // set flag to true
       }
     }
   }
+  if (!selected) {
+    popup = null; // if no recipe was clicked, close popup
+  }
 }
+
+
+
+//------------Easter Egg------------------
+//if compass clicked 8 times compass falls off 
+// let compassClicks = 0;
+// let compassX = 50
+// function mousePressed() {
+//   if (mouseX < 225 && mouseY < 225) {
+//     compassClicks++;
+//     if (compassClicks = 8 && compass.y < height) {
+//       //compass falls off to bottom of screen
+//       image(compass, 50, compassX + 5, 175, 175);
+//       console.log("Compass removed!");
+//     }
+
+//   }
+// }
 

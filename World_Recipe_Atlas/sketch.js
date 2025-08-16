@@ -43,17 +43,9 @@ function draw() {
   blendMode(BLEND);
 
   if (popup) {
-    blendMode(BLEND);
-    fill(255, 255, 255, 200);
-    noStroke();
-    rect(popup.x, popup.y, 300, 200);
-    fill(0);
-    textAlign(CENTER, TOP);
-    textSize(14);
-    text(popup.name, popup.x + 150, popup.y + 100);
+    popup.draw();
   } else {
     fill(0);
-    popup = null;
     textAlign(CENTER);
     text("Click on a dot to see a recipe!", width / 2, height - 50);
   }
@@ -93,14 +85,6 @@ class Globe {
         noStroke();
         ellipse(p.x, p.y, map(p.depth, 0, this.radius, 2, 6));
         blendMode(MULTIPLY);
-
-        // // Draw label
-        // fill("#6E4F2A");
-        // noStroke();
-        // textAlign(CENTER);
-        // textSize(12);
-        // text(list[i].name, p.x, p.y - 10);
-        // blendMode(MULTIPLY);
       }
     }
   }
@@ -165,7 +149,7 @@ class Popup {
     this.w = 300; // width of popup
     this.h = 200; // height of popup
 
-    if (recipe.image != "") {
+    if (recipe.image && recipe.image != "") {
       this.image = loadImage(recipe.image);
     } else {
       this.image = null;
@@ -173,10 +157,12 @@ class Popup {
   }
 
   draw() {
+    //box
     fill(255, 255, 255, 220);
     noStroke();
-    rect(this.x, this.y, this.w, this.h);
+    rect(this.x, this.y, this.w, this.h, 6);
 
+    // names
     fill(0);
     noStroke();
     textAlign(LEFT, TOP);
@@ -187,7 +173,7 @@ class Popup {
     if (local && local.toLowerCase() !== name.toLowerCase()) {
       text(local + " (" + name + ")", this.x + 10, this.y + 10);
     } else {
-      text(nm, this.x + 10, this.y + 10);
+      text(name, this.x + 10, this.y + 10);
     }
 
     // image
@@ -196,8 +182,8 @@ class Popup {
     }
 
     // origin story
-    textSize(12);
-    text(this.recipe.origin_story || "", this.x + 100, this.y + 30, this.w - 110, 80);
+    textSize(10);
+    text(this.recipe.origin_story, this.x + 100, this.y + 30, this.w - 110, this.h - 60);
 
     // "View recipe" button
     const buttonW = 110, buttonH = 22;
@@ -254,15 +240,7 @@ function mouseClicked() {
       let d = dist(mouseX, mouseY, p.x, p.y);
       if (d <= Math.abs(3)) {
         // if clicked near a recipe, open popup
-        popup = list[i];
-        popup.x = p.x; // set popup position
-        popup.y = p.y;
-        console.log("popup clicked:", popup.name);
-        //   fill(255, 255, 255, 200);
-        //   noStroke();
-        //   rect(p.x, p.y, 300, 200);
-        //   fill(0);
-        //   blendMode(MULTIPLY);
+        popup = new Popup(list[i], p.x, p.y);
         selected = true; // set flag to true
       }
     }

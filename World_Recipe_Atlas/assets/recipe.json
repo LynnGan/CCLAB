@@ -119,6 +119,40 @@
         "hidden": false
     },
     {
+        "name": "Starlight Onigiri",
+        "local_name": "Starlight Onigiri",
+        "country": "Unknown",
+        "city": "Between Dreams",
+        "coordinates": {
+            "lat": -48.875485556,
+            "long": -123.392519167
+        },
+        "origin_story": "They say these rice triangles appear only after the clock forgets which day it is. Sailors and night-watchers swear that if you shape the rice in silence and wet your fingers with moon water, the sea calms and dreams come easier. Perhaps you should pack one for Toto, for I know there is going to be a long trip ahead.",
+        "ingredients": [
+            "1 warm bowl of moon-kissed fairy dust",
+            "A pinch of starlight",
+            "1 veil of night-sea that had solidified into a thin sheet",
+            "6 stars (Never take the second star to the right!)",
+            "1 spoon of dew",
+            "petals of Noctiflor"
+        ],
+        "steps": [
+            "Moisten your palms with a spoon of dew until they glow faintly.",
+            "Let the moon-kissed fairy dust settle in between your hands.",
+            "Pinch in starlight and shape the grains into a small triangle of quiet.",
+            "Press a hidden hollow on the back and tuck in 6 stars.",
+            "Wrap with the veil of night-sea until it crackles like distant surf.",
+            "Scatter petals of Noctiflor across the seam.",
+            "Hold it by an open window for one calm breath, then eat in silence so the night can finish the seasoning."
+        ],
+        "image": "assets/Starlight_Onigiri.png",
+        "category": "Snack",
+        "hidden": true,
+        "easter_egg": {
+            "unlock_hint": "Appears between 11pm-3am."
+        }
+    },
+    {
         "name": "Phở Bò",
         "local_name": "Beef Pho",
         "country": "Vietnam",

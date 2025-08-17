@@ -127,6 +127,7 @@ function draw() {
   } else {
     fill(0);
     textAlign(CENTER);
+    textSize(20);
     text("Click on a dot to see a recipe!", width / 2, height - 50);
   }
 }

@@ -48,7 +48,7 @@ function setup() {
 function isMidnightWindow() {
   // midnight–4am local time
   const h = (typeof hour === 'function') ? hour() : (new Date()).getHours();
-  return (h >= 24 || h < 4);
+  return (h >= 23 || h < 4);
 }
 
 function draw() {

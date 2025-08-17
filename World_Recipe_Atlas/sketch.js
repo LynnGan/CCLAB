@@ -3,16 +3,18 @@ let parchmentTexture, compass, worldMap;
 let compassVisible = true;
 let recipes;
 let popup = null;//textbox popup
-let easterEgg1 = false;
+let easterEgg1 = false; //egg1 appears once
 
+// Variables for globe rotation with mouse
 let rotationX = 0;   // up/down tilt (degrees)
 let rotationY = 0;   // left/right spin (degrees)
 let lastMouseX = 0;
 let lastMouseY = 0;
 let dragging = false;
 
-let selectedIndex = 0;
+let selectedIndex = 0;// Track selected recipe index
 
+// Easter Egg state tracking
 let compassClicks = 0;
 let showMusicMsg = false;
 let musicMsgTimer = 0;
@@ -22,13 +24,14 @@ let showEnoughMsg = false;
 let enoughMsgTimer = 0;
 let bgMusic;
 let musicStarted = false;
+let midnightPopup = null;
 
 
 function preload() { // load assets
-  parchmentTexture = loadImage("assets/parchment.jpg");
-  recipes = loadJSON("assets/recipe.json");
-  compass = loadImage("assets/compass.png");
-  bgMusic = loadSound("assets/my_dearest_friends.mp3");
+  parchmentTexture = loadImage("assets/parchment.jpg"); // Background
+  recipes = loadJSON("assets/recipe.json"); //recipe json
+  compass = loadImage("assets/compass.png"); //compass image
+  bgMusic = loadSound("assets/my_dearest_friends.mp3"); //bgm
 }
 
 
@@ -39,8 +42,24 @@ function setup() {
   textFont("Palatino");
 }
 
+// Utility: check if time is midnight–4am
+// Used to unlock hidden recipe (Starlight Onigiri)
+//AI guided
+function isMidnightWindow() {
+  // midnight–4am local time
+  const h = (typeof hour === 'function') ? hour() : (new Date()).getHours();
+  return (h >= 24 || h < 4);
+}
+
 function draw() {
   background(parchmentTexture);
+
+
+  //speical midnight event
+  if (midnightPopup) {
+    midnightPopup.draw();
+    return;
+  }
 
   //draw compass upper left
   if (compassVisible) {
@@ -49,6 +68,7 @@ function draw() {
     blendMode(MULTIPLY);
     pop();
   }
+
   //egg2: music
   if (showMusicMsg) {
     push();
@@ -59,7 +79,8 @@ function draw() {
     text("Ok! Fine! I will give you some music. Now stop bothering me!", width / 2, height / 2);
     blendMode(MULTIPLY);
     pop();
-    if (millis() - musicMsgTimer > 1200) { // 2 seconds
+    //hides message after 1.2 sec
+    if (millis() - musicMsgTimer > 1200) {
       showMusicMsg = false;
     }
   }
@@ -77,25 +98,25 @@ function draw() {
       let y2 = y1 + random(-100, 100);
       line(x1, y1, x2, y2);
     }
-    // Pulsing dark background
+    // overlay, dark, pulse
     fill(0, random(100, 180));
     rect(0, 0, width, height);
 
-    // Creepy text
+    // creepy text
     textAlign(CENTER, CENTER);
     textSize(40);
     textFont("Papyrus");
     fill(random(0, 100), random(200, 255), random(0, 100));
     text("What are you looking for?", width / 2, height / 2);
-
     pop();
 
-    if (millis() - glitchTimer > 1200) { // 1.2 seconds
+    //hides message after 1.2 sec
+    if (millis() - glitchTimer > 1200) {
       showGlitch = false;
     }
   }
 
-  // Glitch effect and "ENOUGH IS ENOUGH" (10 clicks)
+  // egg4: glitch effect and "ENOUGH IS ENOUGH" (10 clicks)
   if (showEnoughMsg) {
     push();
     for (let i = 0; i < 50; i++) {
@@ -108,42 +129,51 @@ function draw() {
     text("ENOUGH IS ENOUGH", width / 2, height / 2);
     pop();
 
-    if (millis() - enoughMsgTimer > 1500) { // 1.5 seconds
+    //hides message after 3.5 sec
+    if (millis() - enoughMsgTimer > 3500) {
       showEnoughMsg = false;
     }
   }
 
 
-  //make obj into array
+  //make obj into array, prepare recipe
   const list = Array.isArray(recipes) ? recipes : Object.values(recipes);
+  const night = isMidnightWindow();
 
-  globe.drawBase(list);
+  // hide "Starlight Onigiri" unless it’s midnight
+  const displayList = list.filter(r => r.name !== "Starlight Onigiri" || night);
+
+  globe.drawBase(displayList);
   blendMode(MULTIPLY);
-  globe.Hover(list);
+  globe.Hover(displayList);
   blendMode(BLEND);
+
 
   if (popup) {
     popup.draw();
   } else {
     fill(0);
     textAlign(CENTER);
-    textSize(20);
+    textSize(25);
     text("Click on a dot to see a recipe!", width / 2, height - 50);
   }
+
 }
 
-
-//Globe class 
+// Globe Class
+// Handles globe outline, plotting recipes, hover text, and projection math
 class Globe {
   constructor() {
     this.radius = windowHeight / 2.50;
   }
 
+  //draw the globe base with outline and recipes
   drawBase(list) {
     this.drawOutline();
     this.plotRecipes(list);
   }
 
+  //draw the globe outline
   drawOutline() {
     noFill();
     stroke("#2a2119");
@@ -154,19 +184,22 @@ class Globe {
     ellipse(width / 2, height / 2, this.radius * 2 + 4);
   }
 
+  //plot recipes on the globe surface
   plotRecipes(list) {
     for (let i = 0; i < list.length; i++) {
-      let lat = list[i].coordinates.lat;
-      let lon = list[i].coordinates.long;
+      const lat = list[i].coordinates.lat;
+      const lon = list[i].coordinates.long;
+      const p = this.project(lat, lon);
+      if (!p) continue;
 
-      let p = this.project(lat, lon);
-      if (p) {
-        // Draw point
-        fill("#6E4F2A");
-        noStroke();
-        ellipse(p.x, p.y, map(p.depth, 0, this.radius, 2, 6));
-        blendMode(MULTIPLY);
-      }
+      //if hidden recipe, then lighter color
+      const isHidden = (list[i].hidden === true) || (list[i].name === "Starlight Onigiri");
+      push();
+      noStroke();
+      blendMode(MULTIPLY); // apply before drawing
+      fill(isHidden ? "#e0d5ba" : "#6E4F2A");  // different color if hidden
+      ellipse(p.x, p.y, map(p.depth, 0, this.radius, 2, 6));
+      pop();
     }
   }
 
@@ -219,8 +252,9 @@ class Globe {
   }
 
 }
+// Popup Class
+// Draws recipe info (story or recipe view)
 
-// popup class
 class Popup {
   constructor(recipe, x, y) {
     this.recipe = recipe;
@@ -240,11 +274,28 @@ class Popup {
     // "View recipe" button, will use later
     this.buttonW = 110, this.buttonH = 22;
     this.buttonX = this.x + 10, this.buttonY = this.y + this.h - 30;
-    // view state: false = story view, true = recipe view
+    // view state:false:story view, true:recipe view
     this.showRecipe = false;
   }
 
   draw() {
+    if (this.recipe.name === "Starlight Onigiri") {
+      //glowing aura behind box for hidden
+      push();
+      noStroke();
+      for (let i = 0; i < 3; i++) {
+        fill(180, 180, 255, 40 - i * 10);
+        ellipse(this.x + this.w / 2, this.y + this.h / 2, this.w + 40 + i * 20, this.h + 40 + i * 20);
+      }
+      pop();
+      // Magical blurb
+      fill(220, 220, 255);
+      textAlign(CENTER, TOP);
+      textSize(16);
+      textStyle(ITALIC);
+      text("✨ A midnight snack for dreamers ✨", this.x + this.w / 2, this.y + 8);
+      textStyle(NORMAL);
+    }
     //box
     fill(255, 255, 255, 220);
     noStroke();
@@ -272,13 +323,13 @@ class Popup {
     // origin story
     textSize(10);
     if (!this.showRecipe) {
-      // STORY VIEW
+      //story
       text(this.recipe.origin_story, this.x + 110, this.y + 34, this.w - 120, this.h - 80);
 
       // button
       this.drawButton(this.buttonX, this.buttonY, this.buttonW, this.buttonH, "View recipe");
     } else {
-      // RECIPE VIEW
+      //recipe
       let x0 = this.x + 10;
       let y0 = this.y + 34;
       const gap = 23;
@@ -313,7 +364,7 @@ class Popup {
 
 
   }
-
+  //button for popup
   drawButton(x, y, w, h, label) {
     fill(200, 150, 50);
     noStroke();
@@ -324,6 +375,7 @@ class Popup {
     text(label, x + w / 2, y + h / 2 + 1);
   }
 
+  //button detection
   isButtonClicked(mx, my) {
     return (
       mx >= this.buttonX && mx <= this.buttonX + this.buttonW &&
@@ -333,6 +385,7 @@ class Popup {
 }
 
 
+// Mouse interactions
 function mousePressed() {
   lastMouseX = mouseX;
   lastMouseY = mouseY;
@@ -380,11 +433,10 @@ function mouseDragged() {
   lastMouseY = mouseY;
 }
 
-
 // Simple click (separate from drag): open popup if near a spot from plotrecipe
 function mouseClicked() {
   const list = Array.isArray(recipes) ? recipes : Object.values(recipes);
-
+  const night = isMidnightWindow();
 
   // If popup exists, check button first
   if (popup && popup.isButtonClicked(mouseX, mouseY)) {
@@ -398,6 +450,8 @@ function mouseClicked() {
     easterEgg1 = true;
   }
   for (let i = 0; i < list.length; i++) {
+    if (list[i].name === "Starlight Onigiri" && !night) continue;
+    // skip if not midnight–4am
     let lat = list[i].coordinates.lat;
     let long = list[i].coordinates.long;
 

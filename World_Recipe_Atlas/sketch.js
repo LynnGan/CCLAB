@@ -293,7 +293,8 @@ class Popup {
       textAlign(CENTER, TOP);
       textSize(16);
       textStyle(ITALIC);
-      text("✨ A midnight snack for dreamers ✨", this.x + this.w / 2, this.y + 8);
+      textSize(20);
+      text("DEBUG TEXT:✨ A midnight snack for dreamers ✨", this.x + this.w / 2, this.y + 8);
       textStyle(NORMAL);
     }
     //box

@@ -294,7 +294,7 @@ class Popup {
       textSize(16);
       textStyle(ITALIC);
       textSize(20);
-      text("✨ A midnight snack for dreamers ✨", this.x + this.w / 2, this.y - 10);
+      text("✨ A midnight snack for dreamers ✨", this.x + this.w / 2, this.y - 16);
       textStyle(NORMAL);
     }
     //box

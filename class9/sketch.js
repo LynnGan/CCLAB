@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 30); // trails
+  background(0, 30); // trails left
 
   // make particles
   let x = mouseX + random(-5, 5);
@@ -47,7 +47,7 @@ function draw() {
   }
 }
 
-// ---------------- Particle ----------------
+//class particles
 class Particle {
   constructor(x, y, size) {
     this.x = x;
@@ -61,11 +61,11 @@ class Particle {
     this.y += this.ySpeed;
   }
   fall() {
-    this.ySpeed += random(-0.05, 0.05); // “unnatural” gravity
+    this.ySpeed += random(-0.05, 0.05); // “unnatural” fall
   }
   display() {
     noStroke();
-    fill(0, 255, 100, 150); // eerie green
+    fill(0, 255, 100, 150); // green
     ellipse(this.x, this.y, this.size);
   }
 }

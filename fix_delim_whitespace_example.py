@@ -1,12 +1,12 @@
-"""
+r"""
 Example demonstrating the fix for pandas delim_whitespace deprecation.
 
 This script shows how to replace the deprecated 'delim_whitespace=True' 
-parameter with sep=r'\\s+' when reading CSV files with pandas.
+parameter with sep=r'\s+' when reading CSV files with pandas.
 
 The warning message was:
     FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated 
-    and will be removed in a future version. Use sep='\\s+' instead
+    and will be removed in a future version. Use sep=r'\s+' instead
 """
 
 import pandas as pd
